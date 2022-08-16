@@ -1,0 +1,43 @@
+
+--- Job GlobalTimberModel_EPABase_2020.gms Start 08/12/22 11:43:51 36.1.0 r2c0a44a WEX-WEI x86 64bit/MS Windows
+--- Applying:
+    C:\GAMS\36\gmsprmNT.txt
+--- GAMS Parameters defined
+    Input "C:\Users\MAROS.IVANIC\OneDrive - USDA\GTAPGTM\GTM\GlobalTimberModel_EPABase_2020.gms"
+    PageSize 0
+    ScrDir "C:\Users\MAROS.IVANIC\OneDrive - USDA\GTAPGTM\GTM\225a\"
+    SysDir C:\GAMS\36\
+    LogOption 3
+    ErrMsg 1
+    ErrorLog 99
+    IDE 1
+    LstTitleLeftAligned 1
+Licensee: Large MUD - 20 User License                    G210128/0001CA-WIN
+          U.S. Department of Agriculture, Economic Research Service  DC1080
+          C:\Users\MAROS.IVANIC\OneDrive - USDA\Documents\GAMS\gamslice.txt
+Processor information: 1 socket(s), 6 core(s), and 12 thread(s) available
+GAMS 36.1.0   Copyright (C) 1987-2021 GAMS Development. All rights reserved
+--- Starting compilation
+--- GlobalTimberModel_EPABase_2020.gms(76) 3 Mb
+--- . param2n_042120.csv(476) 3 Mb
+--- GlobalTimberModel_EPABase_2020.gms(107) 3 Mb
+--- . param3_042420.csv(476) 3 Mb
+--- GlobalTimberModel_EPABase_2020.gms(114) 3 Mb
+--- . param4_042220.csv(476) 3 Mb
+--- GlobalTimberModel_EPABase_2020.gms(154) 3 Mb
+--- . cparam_p6_042220.csv(476) 4 Mb
+--- GlobalTimberModel_EPABase_2020.gms(213) 4 Mb
+--- . forinv2_p6_2020.csv(476) 4 Mb
+--- GlobalTimberModel_EPABase_2020.gms(220) 4 Mb
+--- . iforin2_p6_2020.csv(476) 4 Mb
+--- GlobalTimberModel_EPABase_2020.gms(1487) 4 Mb 2 Errors
+*** Error 408 in C:\Users\MAROS.IVANIC\OneDrive - USDA\GTAPGTM\GTM\GlobalTimberModel_EPABase_2020.gms
+    Too many ),] or }
+*** Error 408 in C:\Users\MAROS.IVANIC\OneDrive - USDA\GTAPGTM\GTM\GlobalTimberModel_EPABase_2020.gms
+    Too many ),] or }
+--- GlobalTimberModel_EPABase_2020.gms(1509) 4 Mb 3 Errors
+*** Error 257 in C:\Users\MAROS.IVANIC\OneDrive - USDA\GTAPGTM\GTM\GlobalTimberModel_EPABase_2020.gms
+    Solve statement not checked because of previous errors
+--- GlobalTimberModel_EPABase_2020.gms(1515) 4 Mb 3 Errors
+*** Status: Compilation error(s)
+--- Job GlobalTimberModel_EPABase_2020.gms Stop 08/12/22 11:43:51 elapsed 0:00:00.133

@@ -1,0 +1,49 @@
+--- Job GlobalTimberModel_EPABase_2020.gms Start 08/12/22 11:44:41 36.1.0 r2c0a44a WEX-WEI x86 64bit/MS Windows
+--- Applying:
+    C:\GAMS\36\gmsprmNT.txt
+--- GAMS Parameters defined
+    Input "C:\Users\MAROS.IVANIC\OneDrive - USDA\GTAPGTM\GTM\GlobalTimberModel_EPABase_2020.gms"
+    PageSize 0
+    ScrDir "C:\Users\MAROS.IVANIC\OneDrive - USDA\GTAPGTM\GTM\225a\"
+    SysDir C:\GAMS\36\
+    LogOption 3
+    ErrMsg 1
+    ErrorLog 99
+    IDE 1
+    LstTitleLeftAligned 1
+Licensee: Large MUD - 20 User License                    G210128/0001CA-WIN
+          U.S. Department of Agriculture, Economic Research Service  DC1080
+          C:\Users\MAROS.IVANIC\OneDrive - USDA\Documents\GAMS\gamslice.txt
+Processor information: 1 socket(s), 6 core(s), and 12 thread(s) available
+GAMS 36.1.0   Copyright (C) 1987-2021 GAMS Development. All rights reserved
+--- Starting compilation
+--- GlobalTimberModel_EPABase_2020.gms(76) 3 Mb
+--- . param2n_042120.csv(476) 3 Mb
+--- GlobalTimberModel_EPABase_2020.gms(107) 3 Mb
+--- . param3_042420.csv(476) 3 Mb
+--- GlobalTimberModel_EPABase_2020.gms(114) 3 Mb
+--- . param4_042220.csv(476) 3 Mb
+--- GlobalTimberModel_EPABase_2020.gms(154) 3 Mb
+--- . cparam_p6_042220.csv(476) 4 Mb
+--- GlobalTimberModel_EPABase_2020.gms(213) 4 Mb
+--- . forinv2_p6_2020.csv(476) 4 Mb
+--- GlobalTimberModel_EPABase_2020.gms(220) 4 Mb
+--- . iforin2_p6_2020.csv(476) 4 Mb
+--- GlobalTimberModel_EPABase_2020.gms(1515) 4 Mb
+--- Starting execution: elapsed 0:00:00.038
+--- GlobalTimberModel_EPABase_2020.gms(13) 5 Mb
+--- GDXin=C:\Users\MAROS.IVANIC\OneDrive - USDA\GTAPGTM\GTM\GLOBALTIMBERMODEL2020.gdx
+--- GDX File (execute_load) C:\Users\MAROS.IVANIC\OneDrive - USDA\GTAPGTM\GTM\GLOBALTIMBERMODEL2020.gdx
+--- GlobalTimberModel_EPABase_2020.gms(3472) 24 Mb
+--- GDX File (execute_unload) C:\Users\MAROS.IVANIC\OneDrive - USDA\GTAPGTM\GTM\GLOBALTIMBERMODEL2020.gdx
+--- GlobalTimberModel_EPABase_2020.gms(4363) 81 Mb
+--- Generating NLP model DYNFONLYM
+--- GlobalTimberModel_EPABase_2020.gms(3936) 165 Mb
+*** Error at line 3936: division by zero (0)
+--- GlobalTimberModel_EPABase_2020.gms(3936) 194 Mb 1 Error  5 secs
+--- GlobalTimberModel_EPABase_2020.gms(4365) 176 Mb 1 Error
+*** SOLVE aborted
+--- Putfile BBBM C:\Users\MAROS.IVANIC\OneDrive - USDA\GTAPGTM\GTM\MINOS.OPT
+--- GlobalTimberModel_EPABase_2020.gms(4365) 176 Mb 1 Error
+*** Status: Execution error(s)
+--- Job GlobalTimberModel_EPABase_2020.gms Stop 08/12/22 11:44:50 elapsed 0:00:09.082
