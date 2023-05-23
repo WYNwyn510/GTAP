@@ -1,0 +1,12 @@
+---
+title: "Implications of afforestation policies for global markets"
+author: "Eric Davis, Maros Ivanic, Brent Sohngen"
+output: bookdown::pdf_document2
+toc: FALSE
+abstract: "The projected growth of the population and incomes as implied by various shared socioeconomic pathways is expected to create  pressures on converting forests into farmland as food prices increase. Depending on the specific path taken, SSP1 through SSP5, and the continuation of the current trends in agricultural productivity growth, the market impacts are expected to vary but generally resulting in increases in food prices. Policies aimed at reversing the deforestation trend by afforesting crop land would result in severe negative market impacts such as  higher food prices, especially in low agriculutrla productivity/high population growht scenarios."
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
