@@ -14,3 +14,6 @@ knitr::opts_chunk$set(echo = TRUE)
 \doublespacing
 
 # Introduction
+Forests play an important role in maintaining and growing the land-based carbon sink, and with increasingly negative climate impacts, the pressure to enact afforestation policies is increasing. The potential gain from afforestation projects, however, is uncertain, with estimates ranging from 42 gigatonnes [@veldman19] to 205 gigatonnes [@bastin19]. At the same time, forests are continually threatened by issues such as population growth, rising incomes, and rising food prices that put pressure on policymakers to allow greater conversion on forestland into farmland. The manner is which these various concerns are addressed is certain to have significant impacts on the global community. 
+
+This project contributes to the literature by melding together two widely accepted global models, the Global Trade Analysis Project (GTAP) computable general equilibrium model and the Global Timber Model (GTM), to better assess the outcomes of several likely scenarios. 
