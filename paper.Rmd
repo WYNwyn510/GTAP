@@ -14,7 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 \doublespacing
 
 # Introduction
-Forests play an important role in maintaining and growing the land-based carbon sink, and with increasingly negative climate impacts, the pressure to enact afforestation policies is increasing. The potential gain from afforestation projects, however, is uncertain, with estimates ranging from 42 gigatonnes [@veldman19] to 205 gigatonnes [@bastin19]. At the same time, forests are continually threatened by issues such as rising incomes and food prices and population growth that put pressure on policymakers to allow greater conversion on forestland into farmland. The manner is which these various oftentimes competing concerns are addressed will no doublt have significant impacts on the global community. 
+Forests play an important role in maintaining and growing the land-based carbon sink, currently sequestering about 30% of GHG emmissions [@roe2019]. With increasingly negative climate impacts, the pressure to enhance the terrestrial sink is growing, and one of the tools to achieve this is through afforestation. In fact, many of the Nationally Determined Contributions (NDCs) that countries have submitted that detail their plans to keep warming under the 2C threshold rely to a significant degree on afforestation projects [@roe2019]. The gains that can be realized, however, are uncertain, with estimates ranging from 42 gigatonnes [@veldman19] to 205 gigatonnes [@bastin19]. At the same time, forests are continually threatened by issues such as rising incomes and food prices and population growth that put pressure on policymakers to allow greater conversion on forestland into farmland. The manner is which these various oftentimes competing concerns are addressed will no doublt have significant impacts on the global community. Previous research has suggested that substantive gains in the carbon sink (+23.8PgCo2e/yr) can be made without sacrificing agricultural land [@griscom2017].
 
 There is growing attention being placed globally to reforestation efforts, which is highligted by the UN's declaration of the years from 2021 through 2030 as the decade of ecosystem resotration [@sewell2020].
 
@@ -22,4 +22,5 @@ This project contributes to the literature by melding together two widely accept
 
 Scenarios
 1) Full attainment of UN strategic plan for forests 2030 (UNFF):  This says that all deforestation will halt and there will be a 3% (120 million hectare) increase in forest area worldwide by 2030 [@sewell2020].
-2) 
+2) Full attainment of AFR100:  This says that there will be a 100 million hectare increase in forest area in Sub-Saharan Africa by 2030 [@sewell2020].
+3) Full attainment of goals of Bonn Challenge and New York Declaration on Forests:  This says that all deforestation will halt and there will be a 200 million hectare increase in forest area worldwide by 2020 and a 350 million hectare increase in forest area worldwide by 2030 [@sewell2020].
