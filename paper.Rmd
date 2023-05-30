@@ -14,6 +14,12 @@ knitr::opts_chunk$set(echo = TRUE)
 \doublespacing
 
 # Introduction
-Forests play an important role in maintaining and growing the land-based carbon sink, and with increasingly negative climate impacts, the pressure to enact afforestation policies is increasing. The potential gain from afforestation projects, however, is uncertain, with estimates ranging from 42 gigatonnes [@veldman19] to 205 gigatonnes [@bastin19]. At the same time, forests are continually threatened by issues such as population growth, rising incomes, and rising food prices that put pressure on policymakers to allow greater conversion on forestland into farmland. The manner is which these various concerns are addressed is certain to have significant impacts on the global community. 
+Forests play an important role in maintaining and growing the land-based carbon sink, and with increasingly negative climate impacts, the pressure to enact afforestation policies is increasing. The potential gain from afforestation projects, however, is uncertain, with estimates ranging from 42 gigatonnes [@veldman19] to 205 gigatonnes [@bastin19]. At the same time, forests are continually threatened by issues such as rising incomes and food prices and population growth that put pressure on policymakers to allow greater conversion on forestland into farmland. The manner is which these various oftentimes competing concerns are addressed will no doublt have significant impacts on the global community. 
+
+There is growing attention being placed globally to reforestation efforts, which is highligted by the UN's declaration of the years from 2021 through 2030 as the decade of ecosystem resotration [@sewell2020].
 
 This project contributes to the literature by melding together two widely accepted global models, the Global Trade Analysis Project (GTAP) computable general equilibrium model and the Global Timber Model (GTM), to better assess the outcomes of several likely scenarios. 
+
+Scenarios
+1) Full attainment of UN strategic plan for forests 2030 (UNFF):  This says that all deforestation will halt and there will be a 3% (120 million hectare) increase in forest area worldwide by 2030 [@sewell2020].
+2) 
