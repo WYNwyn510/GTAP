@@ -26,7 +26,7 @@ This project will assess the impact of various likely scenarios by melding toget
 
 Scenarios
 1) Full attainment of AFR100 pledges as part of Bonn Challenge:  This says that there will be a 127.81 million hectare increase in forest area just in Sub-Saharan Africa by 2030 [@bonn2023]. To see the list of countries and the hectares pledged, please view Scenario 1 of the Excel document "Bonn Challenge-Africa".
-2) Partial attainment of AFR100 pledges as part of Bonn Challenge:  This scenario analyzes full attainment for nations with no internal conflicts and 0% attainment in all other regions. That results in a 54.95 million hectare increase in forest area by 2030 [@bonn2023]  [@acled2023]. To see the list of countries and the hectares pledged, please view Scenario 2 of the Excel document "Bonn Challenge-Africa".
+2) Partial attainment of AFR100 pledges as part of Bonn Challenge:  This scenario analyzes full attainment for nations with conflict severity level less than or equal to limited and 0% attainment for regions with a higher conflict severity rating. Using this measure, there would only be a 54.95 million hectare increase in forest area by 2030 [@bonn2023]  [@acled2023]. To see the list of countries and the hectares pledged, please view Scenario 2 of the Excel document "Bonn Challenge-Africa".
 3) Full attainment of UN strategic plan for forests 2030 (UNFF):  This says that all deforestation will halt and there will be a 3% (120 million hectare) increase in forest area worldwide by 2030 [@sewell2020].
 4) 
 5) Full attainment of goals of Bonn Challenge and New York Declaration on Forests:  This says that all deforestation will halt and there will be a 350 million hectare increase in forest area worldwide by 2030 [@sewell2020].
