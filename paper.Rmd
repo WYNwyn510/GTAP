@@ -24,7 +24,7 @@ South America and Sub-Saharan Africa are two regions that show much potential fo
 
 
 
-This project contributes to the literature by melding together two widely accepted global models, the Global Trade Analysis Project (GTAP) computable general equilibrium model and the Global Timber Model (GTM), to better assess the outcomes of several likely scenarios. 
+This project contributes to the literature by melding together two widely accepted global models, the Global Trade Analysis Project (GTAP) computable general equilibrium model [@aguilar2019] and the Global Timber Model (GTM), to better assess the outcomes of several likely scenarios. The GTAP model facilitates a clear analysis of the impact of various shocks on things like agricultural prices and trade volumes, but the standard model does not well account for land-use changes, and the GTAP Land Use and Land Cover (LULC) database has limitations due to its infrequent updates. To get around these limitations, the GTM is quite helpful, as it is a dynamic optimization model that can examine the impact of afforestation or avoided deforestation on the carbon sink. By joining the two models and passing outputs back and forth between the models, any limitations of the models can be minimized and more robust results, therefore, attained. 
 
 Scenarios
 1) Full attainment of UN strategic plan for forests 2030 (UNFF):  This says that all deforestation will halt and there will be a 3% (120 million hectare) increase in forest area worldwide by 2030 [@sewell2020].
