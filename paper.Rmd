@@ -1,6 +1,6 @@
 ---
 title: "Implications of afforestation policies for global markets"
-date: "`r format(Sys.time(), '%d, %B %Y')`"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
 author: "Eric Davis, Maros Ivanic, Brent Sohngen"
 output: bookdown::pdf_document2
 toc: FALSE
