@@ -2,12 +2,16 @@
 title: "Implications of afforestation policies for global markets"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 author: "Eric Davis, Maros Ivanic, Brent Sohngen"
-output: bookdown::pdf_document2
+output: 
+  bookdown::pdf_document2:
+    keep_tex: TRUE
 toc: FALSE
 bibliography: references.bib
 header-includes:
     - \usepackage{setspace}\doublespacing
 abstract: "The projected growth of the population and incomes as implied by various shared socioeconomic pathways is expected to create  pressures on converting forests into farmland as food prices increase. Depending on the specific path taken, SSP1 through SSP5, and the continuation of the current trends in agricultural productivity growth, the market impacts are expected to vary but generally resulting in increases in food prices. Policies aimed at reversing the deforestation trend by afforesting crop land would result in severe negative market impacts such as  higher food prices, especially in low agriculutrla productivity/high population growht scenarios."
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r setup, include=FALSE}
@@ -19,7 +23,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 In 2020, there were 4.1 billion hectares of forestland globally that cover roughly 31.4% of the land [@fao2023]. These forests play an important role in maintaining and growing the land-based carbon sink, currently sequestering about 30% of GHG emmissions [@roe2019]. With increasingly negative climate impacts, the pressure to enhance the terrestrial sink is growing, and one of the tools to achieve this is afforestation. There is growing attention being placed globally to afforestation efforts, which is highligted by the UN's declaration of the years from 2021 through 2030 as the UN Decade of Ecosystem Resotration [@sewell2020], and many of the Nationally Determined Contributions (NDCs) countries have submitted, which detail their plans to keep warming under the 2C threshold, rely to a significant degree on afforestation projects [@roe2019]. This is because of forests proven ability to sequester carbon not only in the stems of trees [@davis2022] but in their soils as well [@guo2021]. 
 
-The global gains that can be realized from afforestion, however, are uncertain, with broad estimates of cumulative sequestration ranging from 42 gigatonnes to 700 gigatonnes by the end of the century [@veldman2019]  [@bastin201]  [@Humpenöder2014]  [@sathaye2006]  [@doelman2020]. In addition, the amount of land conversion that would be required also varies greatly, with estimates ranging from 0.3 billion hectares to 2.8 billion hectares [@veldman2019]  [@bastin201]  [@Humpenöder2014]  [@doelman2020].  In many cases, these results suggest massive losses in pasture and cropland. This puts into question the feasibility of attaining these results, as forests are continually threatened by issues such as rising incomes and food prices and population growth that put pressure on policymakers to allow greater conversion of forestland into farmland. Previous research though has suggested that substantive gains in the carbon sink (+23.8PgCo2e/yr) can be made without sacrificing agricultural land [@griscom2017]. Still, the manner in which these various and oftentimes competing concerns are addressed will have significant impacts on the global community. 
+The global gains that can be realized from afforestion, however, are uncertain, with broad estimates of cumulative sequestration ranging from 42 gigatonnes to 700 gigatonnes by the end of the century [@veldman2019]  [@bastin201]  [@humpenoder2014]  [@sathaye2006]  [@doelman2020]. In addition, the amount of land conversion that would be required also varies greatly, with estimates ranging from 0.3 billion hectares to 2.8 billion hectares [@veldman2019]  [@bastin201]  [@humpenoder2014]  [@doelman2020].  In many cases, these results suggest massive losses in pasture and cropland. This puts into question the feasibility of attaining these results, as forests are continually threatened by issues such as rising incomes and food prices and population growth that put pressure on policymakers to allow greater conversion of forestland into farmland. Previous research though has suggested that substantive gains in the carbon sink (+23.8PgCo2e/yr) can be made without sacrificing agricultural land [@griscom2017]. Still, the manner in which these various and oftentimes competing concerns are addressed will have significant impacts on the global community. 
 
 Moreover, afforestation appears to not provide the same benefits in all regions of the world. In particular, boreal forests appear to provide the smallest net benefits, as the carbon sequestrations benefits of conifer forests are mitigated by the reduction in albedo in winter [@mykleby2017] [@li2015]. Coniferous forests have also been shown to increase soil organic carbon less than broadleaf forests [@guo2021]. With tropical forests, a strong positive result is derived from afforestation, as the carbon sequestration benefit is complemented by a cooling impact due to changes in both albedo and evapotranspiration, and with temperate forests, the impact of afforestation is also shown to be positive, albeit less strongly so due to a winter warming effect [@li2015]. 
 
@@ -30,10 +34,17 @@ This project will assess the impact of various likely scenarios by melding toget
 # Scenarios
 
 1) Full attainment of AFR100 pledges as part of Bonn Challenge: This says that there will be a 127.81 million hectare increase in forest area just in Sub-Saharan Africa by 2030 [@bonn2023]. To see the list of countries and the hectares pledged, please view Scenario 1 of the Excel document "Bonn Challenge-Africa".
+
 2) Partial attainment of AFR100 pledges as part of Bonn Challenge: This scenario analyzes full attainment for nations with conflict severity level less than or equal to limited and 0% attainment for regions with a higher conflict severity rating. Using this measure, there would only be a 54.95 million hectare increase in forest area by 2030 [@bonn2023]  [@acled2023]. To see the list of countries and the hectares pledged, please view Scenario 2 of the Excel document "Bonn Challenge-Africa".
+
 3) Full attainment of Latin America pledges as part of Bonn Challenge: This says that there will be a 33.64 million hectare increase in forest area by 2030 [@bonn2023]. To see the list of countries and the hectares pledged, please view the Latin America tab of the Excel document "Bonn Challenge-Other Regions".
+
 4) Full attainment of tropical nations' pledges as part of Bonn Challenge: This says that there will be a 182.30 million hectare increase in forest area by 2030 [@bonn2023]. To see the list of countries and the hectares pledged, please view the Tropical Forest tab of the Excel document "Bonn Challenge-Other Regions". Nations that lie in both tropical and sub-tropical zones and taken to be tropical.
+
 5) Full attainment of UN strategic plan for forests 2030 (UNFF): This says that all deforestation will halt and there will be a 3% (~120 million hectare) increase in forest area worldwide by 2030 [@sewell2020]. This will be modeled as a uniform 3% increase in forested area across all nations.
+
 6) Expansion of UN strategic plan for forests: This says that all deforestation will halt and there will be a 15% (~600 million hectare) increase in forest area worldwide by 2030 [@sewell2020]. This will be modeled as a uniform 15% increase in forested area across all nations.
+
+
 
 # References
