@@ -180,6 +180,7 @@ Russia					0.6	0.2	0.2	0.2	0.2
 Sub-Saharan Africa			0.9	0.3	0.2	0.2	0.3
 North Africa & the Middle East		1.1	0.2	0.2	0.2	0.2
 
+Land price seems weird. I have it decreasing????
 
 [@defries2010] found a strong correlation between forest loss and exports of agricultural products. On the other hand, [@turner2005] investigated the role of trade on forests in the context of the Free Trade Area of the Americas (FTAA) using the spatial partial-equilibrium Global Forest Products Model and found that FTAA has a positive impact on forest resources.
 # References
