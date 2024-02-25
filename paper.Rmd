@@ -74,12 +74,12 @@ We first examined the impact of a scenario where the rate of deforestation globa
 Table 1
 	                              ∆ (%)
 Central America	                -16.9
-East Asia	                      -14.4
+East Asia	                -14.4
 North Africa & the Middle East	-11.1
 Southeast Asia	                -10.0
 Russia	                        -9.8
 Brazil	                        -9.7
-Rest of South America	          -14.7
+Rest of South America	        -14.7
 South Asia	                    -9.1
 Canada	                        -8.1
 Oceania	                        -7.5
