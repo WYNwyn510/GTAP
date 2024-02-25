@@ -54,6 +54,8 @@ where $V_1$ is a vector of all the variables in both systems, i.e., all variable
 
 # Scenarios
 
+1a) On aggregate zero percent net deforestation Globally
+
 1) Full attainment of AFR100 pledges as part of Bonn Challenge: This says that there will be a 127.81 million hectare increase in forest area just in Sub-Saharan Africa by 2030 [@bonn2023]. To see the list of countries and the hectares pledged, please view Scenario 1 of the Excel document "Bonn Challenge-Africa".
 
 2) Partial attainment of AFR100 pledges as part of Bonn Challenge: This scenario analyzes full attainment for nations with conflict severity level less than or equal to limited and 0% attainment for regions with a higher conflict severity rating. Using this measure, there would only be a 54.95 million hectare increase in forest area by 2030 [@bonn2023]  [@acled2023]. To see the list of countries and the hectares pledged, please view Scenario 2 of the Excel document "Bonn Challenge-Africa".
@@ -65,6 +67,28 @@ where $V_1$ is a vector of all the variables in both systems, i.e., all variable
 5) Full attainment of UN strategic plan for forests 2030 (UNFF): This says that all deforestation will halt and there will be a 3% (~120 million hectare) increase in forest area worldwide by 2030 [@sewell2020]. This will be modeled as a uniform 3% increase in forested area across all nations.
 
 6) Expansion of UN strategic plan for forests: This says that all deforestation will halt and there will be a 15% (~600 million hectare) increase in forest area worldwide by 2030 [@sewell2020]. This will be modeled as a uniform 15% increase in forested area across all nations.
+
+# Results
+We first examined the impact of a scenario where the rate of deforestation globally was reduced to zero through the implementation of a uniform global tax rate on the conversion of forestland to agricultural land. A tax rate of roughly 70 percent was required to achieve this. With this policy in place, most regions of the world would see significant declines in the amount of agricultural land in 2030 relative to the baseline scenario where land conversion was not taxed. For the United States, agricultural land would be 2.1 percent less (Table 1). Larger decreases would happen in important regions such as Brazil (-9.7 percent), the rest of South America (-14.7 percent), Southeast Asia (-10.0 percent), and Sub-Saharah Africa (-4.8 percent). 
+
+Table 1
+	                              ∆ (%)
+Central America	                -16.9
+East Asia	                      -14.4
+North Africa & the Middle East	-11.1
+Southeast Asia	                -10.0
+Russia	                        -9.8
+Brazil	                        -9.7
+Rest of South America	          -14.7
+South Asia	                    -9.1
+Canada	                        -8.1
+Oceania	                        -7.5
+European Union	                -6.4
+Sub-Saharan Africa	            -4.8
+EUII	                          -3.3
+China	                          -2.5
+United States	                  -2.1
+Japan	                          11.4
 
 
 [@defries2010] found a strong correlation between forest loss and exports of agricultural products. On the other hand, [@turner2005] investigated the role of trade on forests in the context of the Free Trade Area of the Americas (FTAA) using the spatial partial-equilibrium Global Forest Products Model and found that FTAA has a positive impact on forest resources.
