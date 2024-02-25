@@ -77,18 +77,18 @@ Central America	                -16.9
 East Asia	                -14.4
 North Africa & the Middle East	-11.1
 Southeast Asia	                -10.0
-Russia	                        -9.8
-Brazil	                        -9.7
+Russia	                         -9.8
+Brazil	                         -9.7
 Rest of South America	        -14.7
-South Asia	                    -9.1
-Canada	                        -8.1
-Oceania	                        -7.5
-European Union	                -6.4
-Sub-Saharan Africa	            -4.8
-EUII	                          -3.3
-China	                          -2.5
-United States	                  -2.1
-Japan	                          11.4
+South Asia	                 -9.1
+Canada	                         -8.1
+Oceania	                         -7.5
+European Union	                 -6.4
+Sub-Saharan Africa	         -4.8
+EUII	                         -3.3
+China	                         -2.5
+United States	                 -2.1
+Japan	                         11.4
 
 
 [@defries2010] found a strong correlation between forest loss and exports of agricultural products. On the other hand, [@turner2005] investigated the role of trade on forests in the context of the Free Trade Area of the Americas (FTAA) using the spatial partial-equilibrium Global Forest Products Model and found that FTAA has a positive impact on forest resources.
