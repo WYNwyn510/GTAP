@@ -71,7 +71,7 @@ where $V_1$ is a vector of all the variables in both systems, i.e., all variable
 # Results
 We first examined the impact of a scenario where the rate of deforestation globally was reduced to zero through the implementation of a uniform global tax rate on the conversion of forestland to agricultural land. A tax rate of roughly 70 percent was required to achieve this. With this policy in place, most regions of the world would see significant declines in the amount of agricultural land in 2030 relative to the baseline scenario where land conversion was not taxed. For the United States, agricultural land would be 2.1 percent less (Table 1). Larger decreases would happen in important regions such as Brazil (-9.7 percent), the rest of South America (-14.7 percent), Southeast Asia (-10.0 percent), and Sub-Saharah Africa (-4.8 percent). 
 
-Table 1
+Table 1 qo-Land
 	                         ∆ (%)
 Central America	                -16.9
 East Asia	                -14.4
@@ -92,7 +92,7 @@ Japan	                         11.4
 
 These reductions in the amount of agricultural land prompt changes in the quantity of agricultural goods produced for many regions. For example, East Asia and Southeast Asia see the largest declines in percentage terms in agricultural production with decreases of 5.9 percent and 2.8 percent, respectively (Table 2). Surprisingly, Brazil and the United States, despite the derease in available agricultural land compared to the baseline 2030 scenario, see increased agricultural output of 0.2 percent and 0.8 percent, respectively. This may be tied to the sharp declines in other regions prompting greater production for export. 
 
-Table 2
+Table 2 qo-Ag
 			∆ (%)
 East Asia		-5.9
 Southeast Asia		-2.8
@@ -114,7 +114,7 @@ Japan			1.5
 
 When we examine how this impacts exports of agricultural goods, we find that Japan and the United States appear to be the biggest beneficiaries of this policy with their exports increasing 13.5 percent and 5.0 percent, respectively (table 3). The regions where agricultural exports drop most significantly are South Asia, Southeast Asia, and Central America who see decreases of 11.0 percent, 7.3 percent, and 6.9 percent, respectively. 
 
-Table 3
+Table 3 qxw-Ag
 				∆ (%)
 				Agriculture
 Japan				13.5
@@ -138,7 +138,7 @@ East Asia			-19.8
 Overall, this policy, while avoiding deforestation, has a rather significant negative economic impact on all regions except Japan and Canada who see an increase in consumer well-being of $977.1 million and $166.9 million, respectively (table 4). Consumer well-being is a measurement of equivalent variation and here measures the benefit/harm consumers experience in terms of income as a result of the policy changes. The United States, along with 10 other regions, see well-being drop by more than $1 billion. The most negatively impacted regions are South Asia (-28.0 billion), China (-14.5 billion), and Southeast Asia (-13.6 billion). In total, such a policy is estimated to decrease global consumer well-being by $92.1 billion. 
 
 
-Table 4
+Table 4 EV
 				∆ ($)
 Japan				977,125,000
 Canada				166,937,500
@@ -160,7 +160,7 @@ South Asia			-28,024,000,000
 
 Much of this loss in well-being may be the result of higher prices. Japan is the only nation that sees any positive price impacts resulting from this policy, with the price of agricultural goods decreasing 0.2 percent (table 5). All other regions, for both agricultural and non-agricultural products, see prices rise between 0.1 and 2.8 percent. 
 
-Table 5
+Table 5 pm
 									∆ (%)				
 	Agricultural Goods		Forest Products		Lumber		Paper Products		Other Non-Agricultural Goods
 Oceania					0.6	0.3	0.3	0.3	0.3
