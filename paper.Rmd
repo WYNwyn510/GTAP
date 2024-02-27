@@ -9,7 +9,7 @@ toc: FALSE
 bibliography: references.bib
 header-includes:
     - \usepackage{setspace}\doublespacing
-abstract: "The projected growth of the population and incomes as implied by various shared socioeconomic pathways is expected to create  pressures on converting forests into farmland as food prices increase. Depending on the specific path taken, SSP1 through SSP5, and the continuation of the current trends in agricultural productivity growth, the market impacts are expected to vary but generally result in increases in food prices. Policies aimed at reversing the deforestation trend by afforesting cropland would result in severe negative market impacts such as  higher food prices, especially in low agricultural productivity/high population growth scenarios."
+abstract: "The projected growth of the population and incomes as implied by various shared socioeconomic pathways is expected to create pressures on converting forests into farmland as food prices increase. Depending on the specific path taken, SSP1 through SSP5, and the continuation of the current trends in agricultural productivity growth, the market impacts are expected to vary but generally result in increases in food prices. Policies aimed at reversing the deforestation trend by afforesting cropland would result in severe negative market impacts such as  higher food prices, especially in low agricultural productivity/high population growth scenarios."
 ---
 
 ```{r setup, include=FALSE}
