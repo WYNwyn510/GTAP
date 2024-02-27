@@ -12,7 +12,7 @@ header-includes:
 abstract: "The projected growth of the population and incomes as implied by various shared socioeconomic pathways is expected to create pressures on converting forests into farmland as food prices increase. Depending on the specific path taken, SSP1 through SSP5, and the continuation of the current trends in agricultural productivity growth, the market impacts are expected to vary but generally result in increases in food prices. Policies aimed at reversing the deforestation trend by afforesting cropland would result in severe negative market impacts such as  higher food prices, especially in low agricultural productivity/high population growth scenarios."
 ---
 
-```{r setup, include=FALSE}
+```{r setup, include=FALSE, cache = TRUE, echo = FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
@@ -21,15 +21,15 @@ knitr::opts_chunk$set(echo = TRUE)
 
 In 2020, there were 4.1 billion hectares of forestland globally covering roughly 31.4% of the land [@fao2023]. These forests play an important role in maintaining and growing the land-based carbon sink by sequestering about 30% of GHG emissions currently [@roe2019]. This is because of forests proven ability to sequester carbon not only in the stems of trees [@davis2022] but in their soils as well [@guo2021]. With increasingly negative climate impacts, the pressure to enhance the terrestrial sink is growing, and one of the tools to achieve this is afforestation. As such, there is growing attention being placed globally to afforestation efforts, which is highlighted by the UN's declaration of the years from 2021 through 2030 as the UN Decade of Ecosystem Restoration [@sewell2020]. Many of the Nationally Determined Contributions (NDCs) countries have submitted, which detail their plans to keep warming under the 2C threshold, also rely to a significant degree on afforestation projects [@roe2019]. 
 
-The global gains that can be realized from afforestation, however, are uncertain, with broad estimates of cumulative sequestration ranging from 42 gigatonnes to 700 gigatonnes by the end of the century [@veldman2019]  [@bastin2019]  [@humpenoder2014]  [@sathaye2006]  [@doelman2020]. In addition, the amount of land conversion that would be required also varies greatly, with estimates ranging from 0.3 billion hectares to 2.8 billion hectares [@veldman2019]  [@bastin2019]  [@humpenoder2014]  [@doelman2020]. In many cases, these results suggest massive losses in the amount of pasture and cropland that would be available. This puts into question the feasibility of attaining these results, as almost 90 percent of deforestation worldwide is undertaken to expand the amount of agricultural land [@fao2021]. There are many reasons for this. For example, as nations develop and disposable incomes rise, consumers often change to more meat-based diets. Population growth is also a driver. Currently, the United Nations' medium variant population projections suggest that between 2023 and 2033 the worlds' population will grow by 8.8 percent, a gain of 707.1 million people [@un2024]. And where population growth is especially high, which is the case at present throughout most of Africa (2023-2033 population growth: 25.0%: 360.6 million), this puts extreme pressure on policymakers to allow greater conversion of forestland into farmland. Still, some research has suggested that substantive gains in the carbon sink (+23.8PgCo2e/yr) can be made without sacrificing agricultural land [@griscom2017]. 
+The global gains that can be realized from afforestation, however, are uncertain, with broad estimates of cumulative sequestration ranging from 42 gigatonnes to 700 gigatonnes by the end of the century [@veldman2019; @bastin2019; @humpenoder2014; @sathaye2006; @doelman2020]. In addition, the amount of land conversion that would be required also varies greatly, with estimates ranging from 0.3 billion hectares to 2.8 billion hectares [@veldman2019; @bastin2019; @humpenoder2014; @doelman2020]. In many cases, these results suggest massive losses in the amount of pasture and cropland that would be available. This puts into question the feasibility of attaining these results, as almost 90 percent of deforestation worldwide is undertaken to expand the amount of agricultural land [@fao2021]. There are many reasons for this. For example, as nations develop and disposable incomes rise, consumers often change to more meat-based diets. Population growth is also a driver. Currently, the United Nations' medium variant population projections suggest that between 2023 and 2033 the worlds' population will grow by 8.8 percent, a gain of 707.1 million people [@un2024]. And where population growth is especially high, which is the case at present throughout most of Africa (2023--2033 population growth: 25.0%: 360.6 million), this puts extreme pressure on policymakers to allow greater conversion of forestland into farmland. Still, some research has suggested that substantive gains in the carbon sink (+23.8PgCo2e/yr) can be made without sacrificing agricultural land [@griscom2017]. 
 
-Afforestation efforts are also thought to not provide equal benefits in every region. For example, afforestation in boreal zones has been shown to provide the smallest net benefits, as the carbon sequestrations benefits of conifer forests are mitigated by the reduction in albedo in winter [@mykleby2017] [@li2015]. Coniferous forests have also been shown to increase soil organic carbon less than broadleaf forests [@guo2021]. Conversely, tropical forests have been linked with a strong positive result from afforestation, as the carbon sequestration benefit is complemented by a cooling impact due to changes in both albedo and evapotranspiration, and with temperate forests, the impact of afforestation is also shown to be positive, albeit less strongly so due to a winter warming effect [@li2015]. 
+Afforestation efforts are also thought to not provide equal benefits in every region. For example, afforestation in boreal zones has been shown to provide the smallest net benefits, as the carbon sequestrations benefits of conifer forests are mitigated by the reduction in albedo in winter [@mykleby2017; @li2015]. Coniferous forests have also been shown to increase soil organic carbon less than broadleaf forests [@guo2021]. Conversely, tropical forests have been linked with a strong positive result from afforestation, as the carbon sequestration benefit is complemented by a cooling impact due to changes in both albedo and evapotranspiration, and with temperate forests, the impact of afforestation is also shown to be positive, albeit less strongly so due to a winter warming effect [@li2015]. 
 
-South America and Sub-Saharan Africa are thus two regions that show much potential for afforestation. It is estimated that these two regions hold at least 50% of the potential global gain while regions such as Northern Africa and the Middle East show little promise as forest growth rates are quite low [@doelman2020]. Thus, it is promising that the African Forest Landscape Restoration Initiative (AFR100), which aims to afforest 100 million hectares by 2030, has roughly 70% of its commitments coming from Sub-Saharan nations [@auda2023]. While many of these nations may be well-suited in biophysical terms for afforestation, there is concern about how long-lasting any investment may be due to proximate zones of political instability. There are other nations that have a big potential for gains from afforestation, but they also face challenges. India, for example, has a great potential to increase its carbon sequestration through afforestation, but its massive population and food security worries limit its ability to consider such actions. The United Nations suggests that India's population will grow slightly less fast than the world average between 2023 and 2033 (+8.5%), but due to its sizeable base, that will equate to an increase in population of 120.5 million. Thus, its NDC does not entertain the idea of agricultural land being repurposed and instead primarily considers targeting wastelands that may not be well suited for afforestation [@amjath2019]. Moreover, as land-use decisions in one country also tend to have impacts that spillover into many others [@meyfroidt2010] [@lambin2011], analysis needs to be conducted at a global scale. 
+South America and Sub-Saharan Africa are thus two regions that show much potential for afforestation. It is estimated that these two regions hold at least 50% of the potential global gain while regions such as Northern Africa and the Middle East show little promise as forest growth rates are quite low [@doelman2020]. Thus, it is promising that the African Forest Landscape Restoration Initiative (AFR100), which aims to afforest 100 million hectares by 2030, has roughly 70% of its commitments coming from Sub-Saharan nations [@auda2023]. While many of these nations may be well-suited in biophysical terms for afforestation, there is concern about how long-lasting any investment may be due to proximate zones of political instability. There are other nations that have a big potential for gains from afforestation, but they also face challenges. India, for example, has a great potential to increase its carbon sequestration through afforestation, but its massive population and food security worries limit its ability to consider such actions. The United Nations suggests that India's population will grow slightly less fast than the world average between 2023 and 2033 (+8.5%), but due to its sizable base, that will equate to an increase in population of 120.5 million. Thus, its NDC does not entertain the idea of agricultural land being re-purposed and instead primarily considers targeting wastelands that may not be well suited for afforestation [@amjath2019]. Moreover, as land-use decisions in one country also tend to have impacts that spillover into many others [@meyfroidt2010; @lambin2011], analysis needs to be conducted at a global scale. 
 
-Toward this end, Steinbuks and Hertel [@steinbuks2012] developed their global partial equilibrium FABLE model (Forestry, Agriculture, Biofuels, Land Use, and Environment) to identify the optimal land use choices given the competing demands of meeting greenhouse gas targets and satisfying demand for food, bioenergy, forest products, and ecosystem services. While FABLE is a powerful tool for examining the optimal trajectory of various land uses under specific demand assumptions, it is focused on specific sectors of the economy and neglects general equilibrium and household welfare effects [@steinbuks2012] [@hertel2017]. Other efforts have used the Global Trade Analysis Project (GTAP) computable general equilibrium model to address such questions, but its standard model does not well account for land-use changes. This prompted the creation of the Land Use and Land Cover Database within the GTAP framework, which incorporates forestry remote-sensing products [@baldos2012]. The GTAP Agro-Ecological Zone (GTAP-AEZ) model further strengthened the GTAP model's ability to analyze land use changes, with the use of spatially explicit global land use data and through the incorporation of intra- and inter-regional land and land-based greenhouse emissions heterogeneity [@hertel2008]. While the GTAP-AEZ model benefits from the inclusion of competition among different crops, grazing, and forest-based uses, it has limitations, primarily due to its infrequent updates. The KLUM@GTAP framework integrated the Kleines Land Use Model (KLUM) with an extended yet static version of GTAP called GTAP-EFL to evaluate the impact of climate change on cropland allocation. GTAP-EFL separates energy factors from intermediate inputs and incorporates them into capital, while also considering CO2 emissions. KLUM, a global agricultural land-use model, connects the economy to global crop allocation to maximize producer returns under specific risk assumptions. KLUM@GTAP substitutes the land allocation mechanism within GTAP-EFL by utilizing regionally aggregated area changes in cropland determined by KLUM to update cropland shares in GTAP-EFL [@ronneberger2009].
+Toward this end, @steinbuks2012 developed their global partial equilibrium FABLE model (Forestry, Agriculture, Biofuels, Land Use, and Environment) to identify the optimal land use choices given the competing demands of meeting greenhouse gas targets and satisfying demand for food, bioenergy, forest products, and ecosystem services. While FABLE is a powerful tool for examining the optimal trajectory of various land uses under specific demand assumptions, it is focused on specific sectors of the economy and neglects general equilibrium and household welfare effects [@steinbuks2012; @hertel2017]. Other efforts have used the Global Trade Analysis Project (GTAP) computable general equilibrium model to address such questions, but its standard model does not well account for land-use changes. This prompted the creation of the Land Use and Land Cover Database within the GTAP framework, which incorporates forestry remote-sensing products [@baldos2012]. The GTAP Agro-Ecological Zone (GTAP-AEZ) model further strengthened the GTAP model's ability to analyze land use changes, with the use of spatially explicit global land use data and through the incorporation of intra- and inter-regional land and land-based greenhouse emissions heterogeneity [@hertel2008]. While the GTAP-AEZ model benefits from the inclusion of competition among different crops, grazing, and forest-based uses, it has limitations, primarily due to its infrequent updates. The KLUM@GTAP framework integrated the Kleines Land Use Model (KLUM) with an extended yet static version of GTAP called GTAP-EFL to evaluate the impact of climate change on cropland allocation. GTAP-EFL separates energy factors from intermediate inputs and incorporates them into capital, while also considering CO2 emissions. KLUM, a global agricultural land-use model, connects the economy to global crop allocation to maximize producer returns under specific risk assumptions. KLUM@GTAP substitutes the land allocation mechanism within GTAP-EFL by utilizing regionally aggregated area changes in cropland determined by KLUM to update cropland shares in GTAP-EFL [@ronneberger2009].
 
-More recent modeling attempts of land-use change have begun to move away from comparative static analysis. For example, the dynamic GTAP model, supported by the GTAP-AEZ database, considers land market effects, which were identified as significant in driving results by Stevenson et al. [@stevenson2013]. This model has been utilized to evaluate the impact of crop intensification on land use. It, however, has been critiqued, as global aggregates may mask localized shifts that can have implications for ecologically significant areas [@byerlee2014]. In addition, in the standard GTAP model, it is difficult to model a sector individually. There are 68 market sectors covered in the latest version of the GTAP database. The GTAP model's general equilibrium nature means that all these markets are cleared with market-clearing prices. As the model applies nested CES production functions to all sectors and differentiates them by parameters only, to model one sector, in this case forestry, differently from the rest would require a major redesign of the model. While not impossible, this project will attempt to get around these concerns and assess the impact of various likely land-use scenarios by melding the dynamic GTAP model with the Global Timber Model (GTM), which is a dynamic optimization model that has been specifically designed to analyze the relationship among land rents, forested land cover, and carbon sequestration through forests and thus is better able to examine the impact of afforestation or avoided deforestation on the carbon sink [@sohngen2001]. The latest versions of both models were used. For the GTAP model, this meant using data which has 2017 as its base year. This data was then updated to the base year (2023) using data from the Centre for Prospective Studies and International Information (CEPII) [@CEPII2024] to account for the projected changes in gross domestic product (GDP), population, and productivity for each country in the world. Similar steps were taken to update and recalibrate the GTM model.
+More recent modeling attempts of land-use change have begun to move away from comparative static analysis. For example, the dynamic GTAP model, supported by the GTAP-AEZ database, considers land market effects, which were identified as significant in driving results by @stevenson2013. This model has been utilized to evaluate the impact of crop intensification on land use. It, however, has been critiqued, as global aggregates may mask localized shifts that can have implications for ecologically significant areas [@byerlee2014]. In addition, in the standard GTAP model, it is difficult to model a sector individually. There are 68 market sectors covered in the latest version of the GTAP database. The GTAP model's general equilibrium nature means that all these markets are cleared with market-clearing prices. As the model applies nested CES production functions to all sectors and differentiates them by parameters only, to model one sector, in this case forestry, differently from the rest would require a major redesign of the model. While not impossible, this project will attempt to get around these concerns and assess the impact of various likely land-use scenarios by melding the dynamic GTAP model with the Global Timber Model (GTM), which is a dynamic optimization model that has been specifically designed to analyze the relationship among land rents, forested land cover, and carbon sequestration through forests and thus is better able to examine the impact of afforestation or avoided deforestation on the carbon sink [@sohngen2001]. The latest versions of both models were used. For the GTAP model, this meant using data which has 2017 as its base year. This data was then updated to the base year (2023) using data from the Centre for Prospective Studies and International Information (CEPII) [@CEPII2024] to account for the projected changes in gross domestic product (GDP), population, and productivity for each country in the world. Similar steps were taken to update and recalibrate the GTM model.
 
 
 # Connecting the GTAP and GTM models
@@ -53,47 +53,255 @@ s.t. V_2 = V_1
 where $V_1$ is a vector of all the variables in both systems, i.e., all variables in GTAP and all variables in GTM. Of import, $V_1$ includes the land change variables, which are exogenous to the GTAP model. $V_1$ is then used by the GTAP model (represented by function \mbox{GTAP}) and its outputs are passed to GTM as a vector of variables $V_2$. This output vector contains the change in rents, which is treated as exogenous in the GTM model. GTM then processes the $V_2$ variables as inputs and passes its solution back to GTAP as $V_1$. To solve the system simultaneously, we require that $V_1$ and $V_2$ be equal. With several iterations, the system converges to the change in land and land rent that is consistent across the models, i.e., the land change results in the land rent changes that, when entered into the GTM model, result in the same land changes as assumed by the GTAP model.
 
 
+# Deforestation under the baseline projections
+
+To understand the impact of potential regional and global afforestation actions, an important first step was creating a realistic baseline scenario that depicts the likely changes over the decade under study, 2023--2033. Data for this were drawn from CEPII [@CEPII2024]. To build our scenario, we used two key projected variables by CEPII: population and GDP. The CEPII projections do not contain any information on land use. To build a more complete baseline, we also include the projections on forested land change included in the Global Timber Model (GTM). Using the GTAP model in connection with the GTM model (to assure that the changes in land are consistent between the two models), we calculate the overall change in factor quantity/productivity growth required to achieve the targeted values in 2033. In Table \@ref(tab:baseline-growth) we show the projected population and GDP growths per region.
+
+```{r echo = FALSE}
+regLabels = c(
+  "US" = 'US',
+  "CHINA" = 'China',
+  "BRAZIL" = 'Brazil',
+  "CANADA" = 'Canada',
+  "RUSSIA" = 'Russia',
+  "EU ANNEX I" = 'EU I',
+  "EU NON ANNEX I" = 'EU II',
+  "SOUTH ASIA" = 'South Asia',
+  "CENT AMER." = 'Central America',
+  "RSAM" = 'Rest of Latin America',
+  "SSAF" = 'Sub-Saharan Africa',
+  "SE ASIA" = 'Southeast Asia',
+  "OCEANIA" = 'Oceania',
+  "JAPAN" = 'Japan',
+  "AFME" = 'North Africa/Middle East',
+  "E ASIA" = 'East Asia'
+)
+
+gtapCountries = HARr::read_har('asset/gtap/flexagg/gtm/gsdgset.har')$h1
+
+
+gtmCountries = c(
+  'US',
+  'CHINA',
+  'BRAZIL',
+  'CANADA',
+  'RUSSIA',
+  'EU ANNEX I',
+  'EU NON ANNEX I',
+  'SOUTH ASIA',
+  'CENT AMER.',
+  'RSAM',
+  'SSAF',
+  'SE ASIA',
+  'OCEANIA',
+  'JAPAN',
+  'AFME',
+  'E ASIA'
+)
+
+gGTAP = gtapCountries
+names(gGTAP)=c("OCEANIA","CHINA","JAPAN","E ASIA", "SE ASIA", "SOUTH ASIA", "CANADA","US",  "CENT AMER.","BRAZIL", "RSAM",  "EU ANNEX I", 
+               "EU NON ANNEX I",  "RUSSIA", "SSAF", "AFME", "ROW")
+
+gGTM = names(gGTAP)
+names(gGTM)= gGTAP
+
+baselineGTAP = HARr::read_SL4('asset/GTAP/run_baseline.sl4')
+
+out = cbind('Real GDP (\\%)' = baselineGTAP$qgdp[,'TOTAL'],'Population (\\%)' = baselineGTAP$pop[,'TOTAL'],'Agricultural land (\\%)' = baselineGTAP$qo['land',,'TOTAL'])
+
+rownames(out) = regLabels[gGTM[rownames(out)]]
+
+rownames(out)[length(rownames(out))] = 'ROW'
+
+
+kableExtra::column_spec(
+  kableExtra::column_spec(kableExtra::kable_styling(
+    knitr::kable(out, caption = 'GDP, population, and agricultural land growth under the baseline scenario (Source: CEPII and GTM)', digits = 1, escape = FALSE, label = 'baseline-growth')
+  ), 1, border_left = TRUE),
+  4,
+  border_right = TRUE
+)
+
+```
+
+
+
+Focusing on the absolute area of the forested areas, as generated by the GTM model, we estimate that between 2023 and 2033, 144.2 million hectares (3.6%) of global forests will be converted to agricultural lands with the largest decline expected to happen in Sub-Saharan Africa, which is estimated to lose 39.7 million hectares (7.0%) of its forestland (Table \@ref(tab:baseline-forest-change)). Southeast Asia, Brazil, and the rest of South America also see forestland shrink significantly, with decreases of 22.6 million hectares (9.3%), 19.0 million hectares (3.8%), and 23.5 million hectares (6.7%), respectively. Conversely, the United States is estimated to add 1.3 million hectares (0.5%) to its forestland.
+
+
+```{r echo = FALSE}
+
+
+baseline = readRDS('history_baseline.rds')
+
+out = baseline$gtmResult$forests[1:2,]
+
+rownames(out) = c('Forestland in 2023','Forestland in 2033')
+
+out = rbind(out, `$\\Delta$ (Mha)` = out[2,]-out[1,],`$\\Delta$ (\\%)` = 100*(out[2,]/out[1,]-1))
+colnames(out) = regLabels[colnames(out)]
+
+out = cbind(out, Total = rowSums(out))
+
+out[4,'Total'] = (out[2 , 'Total']/out[1 , 'Total']-1)*100
+
+
+kableExtra::column_spec(
+  kableExtra::column_spec(
+    kableExtra::kable_styling(
+      kableExtra::add_footnote(
+        knitr::kable(
+          t(out),
+          escape = FALSE,
+          format = 'latex',
+          digits = 1,
+          label = 'baseline-forest-change',
+          caption = 'Forestland by region in 2023 and estimated change by 2033'
+        ),
+        label = c(
+          'a' = 'Southeast Asia includes Brunei Darussalam, Cambodia, Indonesia, Laos, Malaysia, Myanmar, Philippines, Singapore, Thailand, Timor-Leste, and Vietnam.',
+          'b' = 'Oceania includes Australia, Cook Islands, Fiji, French Polynesia, Kiribati, Marshall Islands, Micronesia, Nauru, New Caledonia, New Zealand, Palau, Papua New Guinea, Samoa (Western Samoa), Solomon Islands, Tonga, Tuvalu, and Vanuatu.',
+          'c' = 'Rest of South America includes Argentina, Bolivia, Czech Republic, Chile, Colombia, Ecuador, the Falkland Islands, French Guiana, Guyana, Paraguay, Peru, South Georgia, the South Sandwich Islands, Suriname, Uruguay, and Venezuela.',
+          d = 'Western & Central Europe includes  Austria, Belgium, Bulgaria, Croatia, Denmark, Estonia, Finland, France, Hungary, Iceland, Italy, Ireland, Germany, Greece, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Monaco, Montenegro, Netherlands, North Macedonia, Norway, Poland, Portugal, Romania, Serbia, Slovakia, Slovenia, Spain, Sweden, Switzerland, Turkey, and the United Kingdom.',
+          e = 'Other Europe includes Albania, Armenia, Azerbaijan, Belarus, Bosnia and Herzegovina, Georgia,  Kosovo Kazakhstan, Kyrgyzstan, Moldova, Tajikistan, and Ukraine.'
+        ),
+        threeparttable  = TRUE
+      )
+    ),
+    1,
+    border_left = TRUE
+  ),
+  5,
+  border_right = TRUE
+)
+
+
+```
+
+<!-- Table 1. Forestland by region in 2023 and estimated change by 2033 -->
+<!-- 	Russia	Sub-Saharan Africa Brazil Canada Rest of South America	United States Southeast Asia Oceania Western & Central Europe China Central America South Asia Other Europe North Africa & the Middle East Japan East Asia Total  -->
+<!-- Forestland in 2023	838.1	564.7	498.2	412.8	348.5	248.4	243.9	199.2	186.7	164.6	94.6	47.8	40.2	33.8	23.7	14.5	3,959.5 -->
+<!-- Forestland in 2033	828.7	525.0	479.2	407.9	325.0	249.7	221.3	196.1	175.5	164.8	91.2	42.6	36.1	30.9	26.9	14.6	3,815.3 -->
+<!-- $\Delta$ (ha)			-9.5	-39.7	-19.0	-5.0	-23.5	1.3	-22.6	-3.1	-11.1	0.1	-3.4	-5.3	-4.1	-2.9	3.2	0.1	-144.2 -->
+<!-- $\Delta$ (%)			-1.1	-7.0	-3.8	-1.2	-6.7	0.5	-9.3	-1.5	-6.0	0.1	-3.6	-11.0	-10.1	-8.5	13.7	0.7	-3.6 -->
+<!-- Note: Southeast Asia includes Brunei Darussalam, Cambodia, Indonesia, Laos, Malaysia, Myanmar, Philippines, Singapore, Thailand, Timor-Leste, and Vietnam. Oceania includes Australia, Cook Islands, Fiji, French Polynesia, Kiribati, Marshall Islands, Micronesia, Nauru, New Caledonia, New Zealand, Palau, Papua New Guinea, Samoa (Western Samoa), Solomon Islands, Tonga, Tuvalu, and Vanuatu. Rest of South America includes  -->
+<!-- Argentina, Bolivia, Czech Republic, Chile, Colombia, Ecuador, the Falkland Islands, French Guiana, Guyana, Paraguay, Peru, South Georgia, the South Sandwich Islands, Suriname, Uruguay, and Venezuela. Western & Central Europe includes  Austria, Belgium, Bulgaria, Croatia, Denmark, Estonia, Finland, France, Hungary, Iceland, Italy, Ireland, Germany, Greece, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Monaco, Montenegro, Netherlands, North Macedonia, Norway, Poland, Portugal, Romania, Serbia, Slovakia, Slovenia, Spain, Sweden, Switzerland, Turkey, and the United Kingdom. Other Europe includes Albania, Armenia, Azerbaijan, Belarus, Bosnia and Herzegovina, Georgia,  Kosovo Kazakhstan, Kyrgyzstan, Moldova, Tajikistan, and Ukraine. 	  -->
+
+
 # Modeling the impact of possible measures to mitigate deforestation/promote afforestation 
 
-To understand the impact of potential regional and global afforestation actions, an important first step was creating a realistic baseline scenario that depicts the likely changes over the decade under study: 2023-2033. Data for this were drawn from sources including CEPII and the United Nations. Using this data, we were able to control for the impact of key drivers of change like growth in population and GDP. Without accounting for this, results would likely have been biased as they would have failed to account for the increasing pressure to convert forests into agricultural land.  
 
-When examining the likely impacts of the baseline changes alone, it is estimated that between 2023 and 2033, 144.2 million hectares (3.6%) of global forests will be converted to agricultural lands with the largest decline expected to happen in Sub-Saharan Africa, which is estimated to lose 39.7 million hectares (7.0%) of its forestland (Table 1). Southeast Asia, Brazil, and the rest of South America also see forestland shrink significantly, with decreases of 22.6 million hectares (9.3%), 19.0 million hectares (3.8%), and 23.5 million hectares (6.7%), respectively. Conversely, the United States is estimated to add 1.3 million hectares (0.5%) to its forestland.
+Against the backdrop of the baseline scenario, we turn to the question of the policy required that could prevent global deforestation in the period of 2023--2033. Because the area of forested area is mostly determined by the relative returns of land in agriculture and forestry, in our policy scenario we modify the return to land in agriculture by applying a uniform global tax the use of land in the production of agricultural output. 
 
-Table 1. Forestland by region in 2023 and estimated change by 2033
-	Russia	Sub-Saharan Africa Brazil Canada Rest of South America	United States Southeast Asia Oceania Western & Central Europe China Central America South Asia Other Europe North Africa & the Middle East Japan East Asia Total 
-Forestland in 2023	838.1	564.7	498.2	412.8	348.5	248.4	243.9	199.2	186.7	164.6	94.6	47.8	40.2	33.8	23.7	14.5	3,959.5
-Forestland in 2033	828.7	525.0	479.2	407.9	325.0	249.7	221.3	196.1	175.5	164.8	91.2	42.6	36.1	30.9	26.9	14.6	3,815.3
-∆ (ha)			-9.5	-39.7	-19.0	-5.0	-23.5	1.3	-22.6	-3.1	-11.1	0.1	-3.4	-5.3	-4.1	-2.9	3.2	0.1	-144.2
-∆ (%)			-1.1	-7.0	-3.8	-1.2	-6.7	0.5	-9.3	-1.5	-6.0	0.1	-3.6	-11.0	-10.1	-8.5	13.7	0.7	-3.6
-Note: Southeast Asia includes Brunei Darussalam, Cambodia, Indonesia, Laos, Malaysia, Myanmar, Philippines, Singapore, Thailand, Timor-Leste, and Vietnam. Oceania includes Australia, Cook Islands, Fiji, French Polynesia, Kiribati, Marshall Islands, Micronesia, Nauru, New Caledonia, New Zealand, Palau, Papua New Guinea, Samoa (Western Samoa), Solomon Islands, Tonga, Tuvalu, and Vanuatu. Rest of South America includes 
-Argentina, Bolivia, Czech Republic, Chile, Colombia, Ecuador, the Falkland Islands, French Guiana, Guyana, Paraguay, Peru, South Georgia, the South Sandwich Islands, Suriname, Uruguay, and Venezuela. Western & Central Europe includes  Austria, Belgium, Bulgaria, Croatia, Denmark, Estonia, Finland, France, Hungary, Iceland, Italy, Ireland, Germany, Greece, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Monaco, Montenegro, Netherlands, North Macedonia, Norway, Poland, Portugal, Romania, Serbia, Slovakia, Slovenia, Spain, Sweden, Switzerland, Turkey, and the United Kingdom. Other Europe includes Albania, Armenia, Azerbaijan, Belarus, Bosnia and Herzegovina, Georgia,  Kosovo Kazakhstan, Kyrgyzstan, Moldova, Tajikistan, and Ukraine. 	 
+Solving the two models together shows  that it would require a tax of roughly 70 percent to be assessed on the use of land for the deforestation rate to fall globally to zero. The economic impact of such a policy measure would not be limited to the cost of the tax, it would also impact food production and its prices. For example, with this policy in place, most regions of the world would see significant declines in the amount of agricultural land in 2033 relative to the baseline scenario where land conversion was not taxed. For the United States, there would be 2.1 percent less agricultural land (Table 2). Larger decreases would happen in other major agricultural production regions such as China (-2.5 percent), South Asia (-8.0 percent), Brazil (-8.5 percent), and Russia (-9.3 percent) (see Table \@ref(tab:baseline-scenario1)). 
 
 
-Against this backdrop, we examined what it would take to end, on net, the practice of deforestation globally. Results suggest that it would require a tax of roughly 70.3 percent to be assessed on the value of converted land for the deforestation rate to fall globally to zero. The economic impact of such a policy measure would not be limited to the cost of the tax, it would also impact food production and global trade flows. For example, with this policy in place, most regions of the world would see significant declines in the amount of agricultural land in 2033 relative to the baseline scenario where land conversion was not taxed. For the United States, there would be 2.1 percent less agricultural land (Table 2). Larger decreases would happen in other major agricultural production regions such as China (-2.5 percent), South Asia (-8.0 percent), Brazil (-8.5 percent), and Russia (-9.3 percent). 
+```{r echo = FALSE}
 
-Table 2. Percentage change in the amount of agricultural land in 2033 with deforestation mitigation policy in place (Source: GTAP qo-Land)
-				∆ (%)
-East Asia			-14.6
-Central America			-14.5
-North Africa & the Middle East	-10.3
-Russia				-9.3
-Southeast Asia			-9.0
-Brazil				-8.5
-Rest of South America		-11.7
-South Asia			-8.0
-Canada				-7.9
-West & Central Europe 		-6.2
-Oceania				-5.9
-Sub-Saharan Africa		-4.1
-China				-2.5
-United States			-2.2
-Japan				17.5
+baselineGTAP = HARr::read_SL4('asset/GTAP/run_baseline.sl4')
+worldGTAP = HARr::read_SL4('asset/GTAP/run_scenario1.sl4')
+
+out = cbind(
+  'Real GDP (\\%)' = ((1 + worldGTAP$qgdp[, 'TOTAL'] / 100) / (1 + baselineGTAP$qgdp[, 'TOTAL'] /
+                                                                 100) - 1) * 100,
+  'Agr. land (\\%)' = ((1 + worldGTAP$qo["land",, 'TOTAL'] / 100) / (1 + baselineGTAP$qo["land",, 'TOTAL'] /
+                                                                 100) - 1) * 100,
+  'Agr. prices (\\%)' = ((1 + worldGTAP$pm["ag",, 'TOTAL'] / 100) / (1 + baselineGTAP$pm["ag",, 'TOTAL'] /
+                                                                 100) - 1) * 100,
+  'Agr. output (\\%)' = ((1 + worldGTAP$qo["ag",, 'TOTAL'] / 100) / (1 + baselineGTAP$qo["ag",, 'TOTAL'] /
+                                                                 100) - 1) * 100
+)
+rownames(out) = regLabels[gGTM[rownames(out)]]
+
+rownames(out)[length(rownames(out))] = 'ROW'
 
 
-These reductions in the amount of agricultural land would then impact the quantity of agricultural goods that could be produced. For example, the 14.6 percent decrease in agrciultural land in East Asia and the 9.0 percent decrease in agrciultural land in Southeast Asia would result in large declines in percentage terms in agricultural production of 5.1 percent and 2.0 percent, respectively (Table 3). Surprisingly, Brazil and the United States, despite their dereases in available agricultural land compared to the baseline 2033 scenario, are estimated to see increased agricultural output of 0.2 percent and 0.6 percent, respectively. This may be tied to the sharp declines in other regions prompting greater intensity of production to satisfy external demand. 
+kableExtra::column_spec(
+  kableExtra::column_spec(kableExtra::kable_styling(
+    knitr::kable(out, caption = 'Changes in key variables relative to baseline under a uniform land tax of 70 \\%', digits = 1, escape = FALSE, label = 'baseline-scenario1')
+  ), 1, border_left = TRUE),
+  5,
+  border_right = TRUE
+)
+
+```
+
+
+```{r echo = FALSE}
+
+
+world = readRDS('history_world.rds')
+
+out = world[[8]]$gtmResult$forests[1:2,]
+
+rownames(out) = c('Forestland in 2023','Forestland in 2033')
+
+out = rbind(out, `$\\Delta$ (Mha)` = out[2,]-out[1,],`$\\Delta$ (\\%)` = 100*(out[2,]/out[1,]-1))
+colnames(out) = regLabels[colnames(out)]
+
+out = cbind(out, Total = rowSums(out))
+
+out[4,'Total'] = (out[2 , 'Total']/out[1 , 'Total']-1)*100
+
+
+kableExtra::column_spec(
+  kableExtra::column_spec(
+    kableExtra::kable_styling(
+        knitr::kable(
+          t(out),
+          escape = FALSE,
+          format = 'latex',
+          digits = 1,
+          caption = 'Percentage change in the amount of forested land in 2033 with deforestation mitigation policy in place (Source: Authors\' calculations)'
+        )
+    ),
+    1,
+    border_left = TRUE
+  ),
+  5,
+  border_right = TRUE
+)
+
+
+```
+
+
+<!-- Table 2. Percentage change in the amount of agricultural land in 2033 with deforestation mitigation policy in place (Source: GTAP qo-Land) -->
+<!-- 				$\Delta$ (%) -->
+<!-- East Asia			-14.6 -->
+<!-- Central America			-14.5 -->
+<!-- North Africa & the Middle East	-10.3 -->
+<!-- Russia				-9.3 -->
+<!-- Southeast Asia			-9.0 -->
+<!-- Brazil				-8.5 -->
+<!-- Rest of South America		-11.7 -->
+<!-- South Asia			-8.0 -->
+<!-- Canada				-7.9 -->
+<!-- West & Central Europe 		-6.2 -->
+<!-- Oceania				-5.9 -->
+<!-- Sub-Saharan Africa		-4.1 -->
+<!-- China				-2.5 -->
+<!-- United States			-2.2 -->
+<!-- Japan				17.5 -->
+
+```{r echo= FALSE, fig.cap='Changes in ag trade volumes (red arrows denote reductions, green arrows denote increases)'}
+baselineGTAP = HARr::read_SL4('asset/GTAP/run_baseline.sl4')
+worldGTAP = HARr::read_SL4('asset/GTAP/run_scenario1.sl4')
+baselineGTAPC = HARr::read_har('asset/GTAP/run_baseline.slc', TRUE)
+
+
+changesInAgTrade = ((1+worldGTAP$qxs/100)/(1+baselineGTAP$qxs/100)-1)['ag',,,'TOTAL'] * baselineGTAPC$viws['ag',,]
+
+circlize::chordDiagram(changesInAgTrade, directional = TRUE, col = ifelse(changesInAgTrade>0,'green','red'),direction.type = "arrows", link.arr.type = 'big.arrow')
+
+```
+
+
+These reductions in the amount of agricultural land would then impact the quantity of agricultural goods that could be produced. For example, the 14.6 percent decrease in agricultural land in East Asia and the 9.0 percent decrease in agricultural land in Southeast Asia would result in large declines in percentage terms in agricultural production of 5.1 percent and 2.0 percent, respectively (Table 3). Surprisingly, Brazil and the United States, despite their decreases in available agricultural land compared to the baseline 2033 scenario, are estimated to see increased agricultural output of 0.2 percent and 0.6 percent, respectively. This may be tied to the sharp declines in other regions prompting greater intensity of production to satisfy external demand. 
 
 Table 3. Percentage change in the amount of agricultural goods produced in 2033 with deforestation mitigation policy in place (Source: GTAP qo-Ag)
-				∆ (%)
+				$\Delta$ (%)
 				Agriculture
 East Asia			-5.1
 Southeast Asia			-2.0
@@ -112,10 +320,10 @@ Canada				1.3
 Japan				1.4
 
 
-When we examine how this impacts exports of agricultural goods, we find that exports from Japan and the United States grow the most, increasing 8.8 percent and 3.5 percent, respectively (Table 4). The regions where agricultural exports drop most significantly are East Asia, South Asia, Southeast Asia, and Central America who see decreases of 14.5 percent, 5.9 percent, 5.1 percent,and 5.0 percent, respectively. 
+When we examine how this impacts exports of agricultural goods, we find that exports from Japan and the United States grow the most, increasing 8.8 percent and 3.5 percent, respectively (Table 4). The regions where agricultural exports drop most significantly are East Asia, South Asia, Southeast Asia, and Central America who see decreases of 14.5 percent, 5.9 percent, 5.1 percent, and 5.0 percent, respectively. 
 
 Table 4. Percentage change in the amount of agricultural exports in 2033, by region, with deforestation mitigation policy in place (Source: GTAP qxw-Ag)
-				∆ (%)
+				$\Delta$ (%)
 				Agriculture
 Japan				8.78
 United States			3.49
@@ -137,7 +345,7 @@ Overall, this tax policy, which results in zero net deforestation globally, has 
 
 
 Table 5. Change in consumer well-being in 2033, by region, in dollars, with deforestation mitigation policy in place (Source: GTAP EV) 
-				∆ ($)
+				$\Delta$ ($)
 Japan				977,125,000
 Canada				166,937,500
 Oceania				-169,625,000
@@ -158,7 +366,7 @@ South Asia			-28,024,000,000
 Much of this loss in well-being may be the result of higher prices. Japan is the only nation that sees any price impacts that are beneficial for consumers resulting from this policy, with the price of agricultural goods decreasing 0.3 percent (Table 6). All other regions, for both agricultural and non-agricultural products, see prices rise between 0.3 and 5.1 percent. 
 
 Table 6. Change in market price of various goods in 2033, by region, with deforestation mitigation policy in place (Source: GTAP pm) 
-									∆ (%)				
+									$\Delta$ (%)				
 	Agricultural Goods		Forest Products		Lumber		Paper Products		Other Non-Agricultural Goods
 Oceania						1.2	0.4	0.5	0.5	0.5
 China						1.1	0.4	0.4	0.4	0.4
@@ -181,11 +389,9 @@ Land price seems weird. I have it decreasing????
 
 # Discussion
 
-This analysis shows that, at an estimated tax rate of 70.3 percent of the value of each acre of land that is converted to agricultural land, global net deforestation would drop to roughly zero. In the United States, as USDA-NASS (Land Values 2022 Summary (August 2022)) valued the average acre of farmland in 2022 at $3,800, the tax would be $2,671.4/acre. In Brazil, CEIC valued the average price of Brazilian land at roughly 2,500 Brazilian Reais, which would put the tax at roughly $203 per acre. Governments would very likely be wary of farmer discontent were they to apply, but they would also have to take into account the larger impacts on their economies. Restricting agricultural land, as shown above, would for the most part restrict output and increase prices. It is uncertain whether the gains from the increase in prices would be sufficient to offset the loss of potential revenue that would have come from expanded agricultural operations. As governments might be reluctant to impose such taxes on their own citizens, it is possible that policymakers who wished to see deforestation stopped could impose import tariffs equal to the tax rate to achieve the same result.
+This analysis shows that, at an estimated tax rate of 70.3 percent of the value of each acre of land that is converted to agricultural land, global net deforestation would drop to roughly zero. In the United States, as USDA-NASS (Land Values 2022 Summary (August 2022)) valued the average acre of farmland in 2022 at $3,800, the tax would be $2,671.4/acre. In Brazil, CEIC valued the average price of Brazilian land at roughly 2,500 Brazilian Reals, which would put the tax at roughly $203 per acre. Governments would very likely be wary of farmer discontent were they to apply, but they would also have to take into account the larger impacts on their economies. Restricting agricultural land, as shown above, would for the most part restrict output and increase prices. It is uncertain whether the gains from the increase in prices would be sufficient to offset the loss of potential revenue that would have come from expanded agricultural operations. As governments might be reluctant to impose such taxes on their own citizens, it is possible that policymakers who wished to see deforestation stopped could impose import tariffs equal to the tax rate to achieve the same result.
 
-We also show the utility of joining two major economic models. GTAP has long been valued for its ability to provide robust information on global trade flows and prices, and GTM has proven its utility in understanding the impact of forestry decisions on the carbon sink and land rents. By combining these models through the use of R and allowing the models to pass inputs and outputs back and forth iteratively, the benefits of both models have been maintained and their weaknesses greatly minimized. This advance holds great promise for advancement on a variety of fronts for researchers and policymakers interested in climate change, agricultural trade, and their interdependencies. 
-
-
+We also show the utility of joining two major economic models. GTAP has long been valued for its ability to provide robust information on global trade flows and prices, and GTM has proven its utility in understanding the impact of forestry decisions on the carbon sink and land rents. By combining these models through the use of R and allowing the models to pass inputs and outputs back and forth iteratively, the benefits of both models have been maintained and their weaknesses greatly minimized. This advance holds great promise for advancement on a variety of fronts for researchers and policymakers interested in climate change, agricultural trade, and their inter-dependencies. 
 
 
 
@@ -194,21 +400,23 @@ We also show the utility of joining two major economic models. GTAP has long bee
 
 
 
-Unused
 
-1a) On aggregate zero percent net deforestation Globally
 
-1) Full attainment of AFR100 pledges as part of Bonn Challenge: This says that there will be a 127.81 million hectare increase in forest area just in Sub-Saharan Africa by 2030 [@bonn2023]. To see the list of countries and the hectares pledged, please view Scenario 1 of the Excel document "Bonn Challenge-Africa".
+<!-- Unused -->
 
-2) Partial attainment of AFR100 pledges as part of Bonn Challenge: This scenario analyzes full attainment for nations with conflict severity level less than or equal to limited and 0% attainment for regions with a higher conflict severity rating. Using this measure, there would only be a 54.95 million hectare increase in forest area by 2030 [@bonn2023]  [@acled2023]. To see the list of countries and the hectares pledged, please view Scenario 2 of the Excel document "Bonn Challenge-Africa".
+<!-- 1a) On aggregate zero percent net deforestation Globally -->
 
-3) Full attainment of Latin America pledges as part of Bonn Challenge: This says that there will be a 33.64 million hectare increase in forest area by 2030 [@bonn2023]. To see the list of countries and the hectares pledged, please view the Latin America tab of the Excel document "Bonn Challenge-Other Regions".
+<!-- 1) Full attainment of AFR100 pledges as part of Bonn Challenge: This says that there will be a 127.81 million hectare increase in forest area just in Sub-Saharan Africa by 2030 [@bonn2023]. To see the list of countries and the hectares pledged, please view Scenario 1 of the Excel document "Bonn Challenge-Africa". -->
 
-4) Full attainment of tropical nations' pledges as part of Bonn Challenge: This says that there will be a 182.30 million hectare increase in forest area by 2030 [@bonn2023]. To see the list of countries and the hectares pledged, please view the Tropical Forest tab of the Excel document "Bonn Challenge-Other Regions". Nations that lie in both tropical and sub-tropical zones and taken to be tropical.
+<!-- 2) Partial attainment of AFR100 pledges as part of Bonn Challenge: This scenario analyzes full attainment for nations with conflict severity level less than or equal to limited and 0% attainment for regions with a higher conflict severity rating. Using this measure, there would only be a 54.95 million hectare increase in forest area by 2030 [@bonn2023]  [@acled2023]. To see the list of countries and the hectares pledged, please view Scenario 2 of the Excel document "Bonn Challenge-Africa". -->
 
-5) Full attainment of UN strategic plan for forests 2030 (UNFF): This says that all deforestation will halt and there will be a 3% (~120 million hectare) increase in forest area worldwide by 2030 [@sewell2020]. This will be modeled as a uniform 3% increase in forested area across all nations.
+<!-- 3) Full attainment of Latin America pledges as part of Bonn Challenge: This says that there will be a 33.64 million hectare increase in forest area by 2030 [@bonn2023]. To see the list of countries and the hectares pledged, please view the Latin America tab of the Excel document "Bonn Challenge-Other Regions". -->
 
-6) Expansion of UN strategic plan for forests: This says that all deforestation will halt and there will be a 15% (~600 million hectare) increase in forest area worldwide by 2030 [@sewell2020]. This will be modeled as a uniform 15% increase in forested area across all nations.
+<!-- 4) Full attainment of tropical nations' pledges as part of Bonn Challenge: This says that there will be a 182.30 million hectare increase in forest area by 2030 [@bonn2023]. To see the list of countries and the hectares pledged, please view the Tropical Forest tab of the Excel document "Bonn Challenge-Other Regions". Nations that lie in both tropical and sub-tropical zones and taken to be tropical. -->
 
-[@defries2010] found a strong correlation between forest loss and exports of agricultural products. On the other hand, [@turner2005] investigated the role of trade on forests in the context of the Free Trade Area of the Americas (FTAA) using the spatial partial-equilibrium Global Forest Products Model and found that FTAA has a positive impact on forest resources.
+<!-- 5) Full attainment of UN strategic plan for forests 2030 (UNFF): This says that all deforestation will halt and there will be a 3% (~120 million hectare) increase in forest area worldwide by 2030 [@sewell2020]. This will be modeled as a uniform 3% increase in forested area across all nations. -->
+
+<!-- 6) Expansion of UN strategic plan for forests: This says that all deforestation will halt and there will be a 15% (~600 million hectare) increase in forest area worldwide by 2030 [@sewell2020]. This will be modeled as a uniform 15% increase in forested area across all nations. -->
+
+<!-- [@defries2010] found a strong correlation between forest loss and exports of agricultural products. On the other hand, [@turner2005] investigated the role of trade on forests in the context of the Free Trade Area of the Americas (FTAA) using the spatial partial-equilibrium Global Forest Products Model and found that FTAA has a positive impact on forest resources. -->
 # References
