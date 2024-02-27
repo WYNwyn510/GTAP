@@ -92,7 +92,7 @@ Japan				17.5
 
 These reductions in the amount of agricultural land would then impact the quantity of agricultural goods that could be produced. For example, the 14.6 percent decrease in agrciultural land in East Asia and the 9.0 percent decrease in agrciultural land in Southeast Asia would result in large declines in percentage terms in agricultural production of 5.1 percent and 2.0 percent, respectively (Table 3). Surprisingly, Brazil and the United States, despite their dereases in available agricultural land compared to the baseline 2033 scenario, are estimated to see increased agricultural output of 0.2 percent and 0.6 percent, respectively. This may be tied to the sharp declines in other regions prompting greater intensity of production to satisfy external demand. 
 
-Table 3. Percentage change in the amount of agricultural land in 2033 with deforestation mitigation policy in place (Source: GTAP qo-Land)qo-Ag
+Table 3. Percentage change in the amount of agricultural goods produced in 2033 with deforestation mitigation policy in place (Source: GTAP qo-Ag)
 				∆ (%)
 				Agriculture
 East Asia			-5.1
@@ -114,7 +114,7 @@ Japan				1.4
 
 When we examine how this impacts exports of agricultural goods, we find that exports from Japan and the United States grow the most, increasing 8.8 percent and 3.5 percent, respectively (Table 4). The regions where agricultural exports drop most significantly are East Asia, South Asia, Southeast Asia, and Central America who see decreases of 14.5 percent, 5.9 percent, 5.1 percent,and 5.0 percent, respectively. 
 
-Table 4. Percentage change in the amount of agricultural land in 2033 with deforestation mitigation policy in place (Source: GTAP qo-Land)qxw-Ag
+Table 4. Percentage change in the amount of agricultural exports in 2033, by region, with deforestation mitigation policy in place (Source: GTAP qxw-Ag)
 				∆ (%)
 				Agriculture
 Japan				8.78
@@ -133,10 +133,10 @@ Southeast Asia			-5.14
 South Asia			-5.94
 East Asia			-14.45
 
-Overall, this tax policy, which results in zero net deforestation globally, has a rather significant negative economic impact on all regions except Japan and Canada who see an increase in consumer well-being of $977.1 million and $166.9 million, respectively (table 4). Consumer well-being is a measurement of equivalent variation and here measures the benefit/harm consumers experience in terms of income as a result of the policy changes. The United States, along with 10 other regions, see well-being drop by more than $1 billion. The most negatively impacted regions are South Asia (-$28.0 billion), China (-$14.5 billion), and Southeast Asia (-$13.6 billion). In total, this tax-driven policy is estimated to decrease global consumer well-being in 2033 by $92.1 billion relative to the scenario where no tax on forestland conversion was in place. 
+Overall, this tax policy, which results in zero net deforestation globally, has a rather significant negative economic impact on all regions except Japan and Canada who see an increase in consumer well-being of $977.1 million and $166.9 million, respectively (Table 5). Consumer well-being is a measurement of equivalent variation and here measures the benefit/harm consumers experience in terms of income as a result of the policy changes. The United States, along with 10 other regions, see well-being drop by more than $1 billion. The most negatively impacted regions are South Asia (-$28.0 billion), China (-$14.5 billion), and Southeast Asia (-$13.6 billion). In total, this tax-driven policy is estimated to decrease global consumer well-being in 2033 by $92.1 billion relative to the scenario where no tax on forestland conversion was in place. 
 
 
-Table 4 EV
+Table 5. Change in consumer well-being in 2033, by region, in dollars, with deforestation mitigation policy in place (Source: GTAP EV) 
 				∆ ($)
 Japan				977,125,000
 Canada				166,937,500
@@ -155,9 +155,9 @@ China				-14,452,000,000
 South Asia			-28,024,000,000
 
 
-Much of this loss in well-being may be the result of higher prices. Japan is the only nation that sees any price impacts that are beneficial for consumers resulting from this policy, with the price of agricultural goods decreasing 0.3 percent (table 5). All other regions, for both agricultural and non-agricultural products, see prices rise between 0.3 and 5.1 percent. 
+Much of this loss in well-being may be the result of higher prices. Japan is the only nation that sees any price impacts that are beneficial for consumers resulting from this policy, with the price of agricultural goods decreasing 0.3 percent (Table 6). All other regions, for both agricultural and non-agricultural products, see prices rise between 0.3 and 5.1 percent. 
 
-Table 5 pm
+Table 6. Change in market price of various goods in 2033, by region, with deforestation mitigation policy in place (Source: GTAP pm) 
 									∆ (%)				
 	Agricultural Goods		Forest Products		Lumber		Paper Products		Other Non-Agricultural Goods
 Oceania						1.2	0.4	0.5	0.5	0.5
