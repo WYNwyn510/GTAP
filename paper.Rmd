@@ -290,7 +290,26 @@ East Asia			-14.45
 
 Overall, this tax policy, which results in zero net deforestation globally, has a rather significant negative economic impact on all regions except Japan and Canada who see an increase in consumer well-being of $977.1 million and $166.9 million, respectively (Table 5). Consumer well-being is a measurement of equivalent variation and here measures the benefit/harm consumers experience in terms of income as a result of the policy changes. The United States, along with 10 other regions, see well-being drop by more than $1 billion. The most negatively impacted regions are South Asia (-$28.0 billion), China (-$14.5 billion), and Southeast Asia (-$13.6 billion). In total, this tax-driven policy is estimated to decrease global consumer well-being in 2033 by $92.1 billion relative to the scenario where no tax on forestland conversion was in place. 
 
+```{r echo = FALSE}
 
+baselineGTAP = HARr::read_SL4('asset/GTAP/run_baseline.sl4')
+worldGTAP = HARr::read_SL4('asset/GTAP/run_scenario1.sl4')
+
+out = rbind(out, `$\\Delta$ ($)` = worldGTAP$EV-baselineGTAP$EV)
+)
+rownames(out) = regLabels[gGTM[rownames(out)]]
+
+rownames(out)[length(rownames(out))] = 'ROW'
+
+kableExtra::column_spec(
+  kableExtra::column_spec(kableExtra::kable_styling(
+    knitr::kable(out, caption = 'Change in consumer well-being in 2033, by region, in dollars, with deforestation mitigation policy in place', digits = 1, escape = FALSE, label = 'baseline-scenario1')
+  ), 1, border_left = TRUE),
+  5,
+  border_right = TRUE
+)
+
+```
 Table 5. Change in consumer well-being in 2033, by region, in dollars, with deforestation mitigation policy in place (Source: GTAP EV) 
 				$\Delta$ ($)
 Japan				977,125,000
@@ -322,6 +341,7 @@ This analysis shows that, at an estimated tax rate of 70.3 percent of the value 
 We also show the utility of joining two major economic models. GTAP has long been valued for its ability to provide robust information on global trade flows and prices, and GTM has proven its utility in understanding the impact of forestry decisions on the carbon sink and land rents. By combining these models through the use of R and allowing the models to pass inputs and outputs back and forth iteratively, the benefits of both models have been maintained and their weaknesses greatly minimized. This advance holds great promise for advancement on a variety of fronts for researchers and policymakers interested in climate change, agricultural trade, and their inter-dependencies. 
 
 
+# References
 
 
 
@@ -347,4 +367,4 @@ We also show the utility of joining two major economic models. GTAP has long bee
 <!-- 6) Expansion of UN strategic plan for forests: This says that all deforestation will halt and there will be a 15% (~600 million hectare) increase in forest area worldwide by 2030 [@sewell2020]. This will be modeled as a uniform 15% increase in forested area across all nations. -->
 
 <!-- [@defries2010] found a strong correlation between forest loss and exports of agricultural products. On the other hand, [@turner2005] investigated the role of trade on forests in the context of the Free Trade Area of the Americas (FTAA) using the spatial partial-equilibrium Global Forest Products Model and found that FTAA has a positive impact on forest resources. -->
-# References
+
