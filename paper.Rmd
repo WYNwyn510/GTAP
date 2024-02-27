@@ -59,7 +59,7 @@ To understand the impact of potential regional and global afforestation actions,
 
 When examining the likely impacts of the baseline changes alone, it is estimated that by 2033, significant deforestation would have occured in many regions of the world. For example, in Brazil... 
 
-Then, we examined what it would take given the pressures of a still growing global population and an increasing appetite for foodstuffs for the practice of deforestation to end, on net, globally. Results suggest that it would require a tax of roughly 70.3 percent to be assessed on the value of the converted land for the deforestation rate to fall globally to roughly zero. The economic impact of such a policy measure would not be limited to the cost of the tax, it would also change impact food production and global trade. For example, with this policy in place, most regions of the world would see significant declines in the amount of agricultural land in 2033 relative to the baseline scenario where land conversion was not taxed. For the United States, agricultural land would be 2.1 percent less (Table 1). Larger decreases would happen in other major agricultural production regions such as China (-2.5 percent), South Asia (-8.0 percent), Brazil (-8.5 percent), and Russia (-9.3 percent). 
+Then, we examined what it would take given the pressures of a still growing global population and an increasing appetite for foodstuffs for the practice of deforestation to end, on net, globally. Results suggest that it would require a tax of roughly 70.3 percent to be assessed on the value of converted land for the deforestation rate to fall globally to roughly zero. The economic impact of such a policy measure would not be limited to the cost of the tax, it would also change impact food production and global trade flows. For example, with this policy in place, most regions of the world would see significant declines in the amount of agricultural land in 2033 relative to the baseline scenario where land conversion was not taxed. For the United States, there would be 2.1 percent less agricultural land (Table 1). Larger decreases would happen in other major agricultural production regions such as China (-2.5 percent), South Asia (-8.0 percent), Brazil (-8.5 percent), and Russia (-9.3 percent). 
 
 Table 1 qo-Land
 				∆ (%)
@@ -81,7 +81,7 @@ Japan				17.5
 
 
 
-These reductions in the amount of agricultural land prompt changes in the quantity of agricultural goods produced for many regions. For example, East Asia and Southeast Asia see the largest declines in percentage terms in agricultural production with decreases of 5.1 percent and 2.0 percent, respectively (Table 2). Surprisingly, Brazil and the United States, despite the derease in available agricultural land compared to the baseline 2033 scenario, see increased agricultural output of 0.2 percent and 0.6 percent, respectively. This may be tied to the sharp declines in other regions prompting greater production for export. 
+These reductions in the amount of agricultural land would then impact the quantity of agricultural goods that could be produced. For example, the 14.6 percent decrease in agrciultural land in East Asia and the 9.0 percent decrease in agrciultural land in Southeast Asia would result in large declines in percentage terms in agricultural production of 5.1 percent and 2.0 percent, respectively (Table 2). Surprisingly, Brazil and the United States, despite the derease in available agricultural land compared to the baseline 2033 scenario, are estimated to see increased agricultural output of 0.2 percent and 0.6 percent, respectively. This may be tied to the sharp declines in other regions prompting greater production for export. 
 
 Table 2 qo-Ag
 				∆ (%)
@@ -119,12 +119,12 @@ Brazil				1.03
 Rest of South America		-2.67
 Sub-Saharan Africa		0.02
 North Africa & the Middle East	-1.52
-Central America		-5.02
-Southeast Asia		-5.14
-South Asia		-5.94
-East Asia		-14.45
+Central America			-5.02
+Southeast Asia			-5.14
+South Asia			-5.94
+East Asia			-14.45
 
-Overall, this policy, while avoiding deforestation, has a rather significant negative economic impact on all regions except Japan and Canada who see an increase in consumer well-being of $977.1 million and $166.9 million, respectively (table 4). Consumer well-being is a measurement of equivalent variation and here measures the benefit/harm consumers experience in terms of income as a result of the policy changes. The United States, along with 10 other regions, see well-being drop by more than $1 billion. The most negatively impacted regions are South Asia (-28.0 billion), China (-14.5 billion), and Southeast Asia (-13.6 billion). In total, such a policy is estimated to decrease global consumer well-being by $92.1 billion. 
+Overall, this policy, while creating the positive result of avoiding deforestation, has a rather significant negative economic impact on all regions except Japan and Canada who see an increase in consumer well-being of $977.1 million and $166.9 million, respectively (table 4). Consumer well-being is a measurement of equivalent variation and here measures the benefit/harm consumers experience in terms of income as a result of the policy changes. The United States, along with 10 other regions, see well-being drop by more than $1 billion. The most negatively impacted regions are South Asia (-$28.0 billion), China (-$14.5 billion), and Southeast Asia (-$13.6 billion). In total, this tax-driven policy is estimated to decrease global consumer well-being in 2033 by $92.1 billion relative to the scenario where no tax on forestland conversion was in place. 
 
 
 Table 4 EV
@@ -132,11 +132,10 @@ Table 4 EV
 Japan				977,125,000
 Canada				166,937,500
 Oceania				-169,625,000
-EUII				-588,500,000
 Brazil				-735,125,000
+Rest of South America		-3,848,625,000
 United States			-1,085,000,000
 Russia				-1,152,375,000
-Rest of South America		-3,848,625,000
 Central America			-4,471,500,000
 North Africa & the Middle East	-5,012,125,000
 East Asia			-5,065,625,000
@@ -147,7 +146,7 @@ China				-14,452,000,000
 South Asia			-28,024,000,000
 
 
-Much of this loss in well-being may be the result of higher prices. Japan is the only nation that sees any positive price impacts resulting from this policy, with the price of agricultural goods decreasing 0.3 percent (table 5). All other regions, for both agricultural and non-agricultural products, see prices rise between 0.3 and 5.1 percent. 
+Much of this loss in well-being may be the result of higher prices. Japan is the only nation that sees any price impacts that are beneficial for consumers resulting from this policy, with the price of agricultural goods decreasing 0.3 percent (table 5). All other regions, for both agricultural and non-agricultural products, see prices rise between 0.3 and 5.1 percent. 
 
 Table 5 pm
 									∆ (%)				
@@ -171,7 +170,9 @@ North Africa & the Middle East			2.0	0.4	0.4	0.4	0.4
 Land price seems weird. I have it decreasing????
 
 
+# Discussion
 
+This analysis shows that, at an estimated tax rate of 70.3 percent of the value of each acre of land that is converted to agricultural land, global net deforestation would drop to roughly zero. In the United States, as USDA-NASS (Land Values 2022 Summary (August 2022)) valued the average acre of farmland in 2022 at $3,800, the tax would be $2,671.4/acre. In Brazil, CEIC valued the average price of Brazilian land at roughly 2,500 Brazilian Reais, which would put the tax at roughly $203 per acre. Governments would very likely be wary of farmer discontent were they to apply, but they would also have to take into account the larger impacts on their economies. Restricting agricultural land, as shown above, would for the most part restrict output and increase prices. It is uncertain whether the gains from the increase in prices would be sufficient to offset the loss of potential revenue that would have come from expanded agricultural operations. As governments might be reluctant to impose such taxes on their own citizens, it is possible that policymakers who wished to see deforestation stopped could impose import tariffs equal to the tax rate to achieve the same result.
 
 1a) On aggregate zero percent net deforestation Globally
 
