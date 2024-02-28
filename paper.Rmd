@@ -1,5 +1,5 @@
 ---
-title: "Avoiding deforestation: The implications for global markets"
+title: "Avoiding global deforestation by taxing land in agricultural production: The implications for global markets"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 author: "Eric C. Davis, Maros Ivanic, and Brent Sohngen"
 output: 
@@ -16,6 +16,13 @@ abstract: "The projected growth in population and incomes is expected to create 
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+\vspace{1in}
+
+**The findings and conclusions in this publication are those of the author(s) and should not be construed to represent any official USDA or U.S. Government determination or policy.**
+
+**This research was supported in part by the U.S. Department of Agriculture, Economic Research Service.**
+
+\newpage
 
 # Introduction
 
@@ -34,23 +41,33 @@ More recent modeling attempts of land-use change have begun to move away from co
 
 # Connecting the GTAP and GTM models
 
-The rationale for joining these two models is that, by passing outputs back and forth between the models until a dual-state equilibrium is achieved, any limitations of either model should be minimized and more robust results should, therefore, be attained. Establishing a connection between the GTAP model and the GTM model required a two-step process. First, we had to identify the set of variables that are common to both models and their closures. From those, we selected which variables would be determined endogenously by one model and held as exogenous in the other model. In our case, we decided to model the return on land using the GTAP model and feed those results into the GTM model as exogenous. The GTM model then endogenously determined the amount of land available for crop and livestock production, and we fed that back into the GTAP model as an exogenous input. In the second step, we established the connection between the models on the software level. This step required that the GTAP model, which is written in GEMPACK, be able to handle inputs from the GTM model, which is written in GAMS, and submit the outputs back to the GTM model. As GEMPACK and GAMS were developed long before software integration became important or even possible, we settled on the use of R [@R2021] to create the user functions that executed both models, collected their outputs, and automatically created parameter files.
+Both the GTAP and GTM models represent widely used models for policy analysis. In the case of GTAP, the model is used to describe the implications of various policy instruments for national and globla markets, including prices, output and trade. The GTM model is, on the other hand, capable to translating the impacts of population and global growth, and the changes in land returns, to changes in global forested areas and calculate the impacts on total carbon contained in forests.
 
-Once R was able to control the interactions between both models, we were then able to formulate the combined solution as a fairly simple math program that is solved in R:
+Even though the GTAP and GTM models capture important aspects of the global economy and the biophysical world, they do not contain certain behaviors. In the case of GTAP, the model assumes that the amount of agricultural land is fixed, while the GTM considers the returns to land fixed. By combining the two models, we can fill each model missing behavior for a more complete description of the global impacts. 
 
-\begin{equation}
-\mbox{GTAP}:V_1\to V_2
-\end{equation}
+The combination of the two models means that we use the GTAP model to create the link between the amounts of available land and its returns for the benefit of the GTM model, while at the same time we use the GTM model to create the response of  agricultural land quantity to returns in land returns for the benefit of the GTAP model. By solving both models together, we can greatly expand the descriptive power of both models.
 
-\begin{equation}
-\mbox{GTM}:V_2\to V_1
-\end{equation}
 
-\begin{equation}
-s.t. V_2 = V_1
-\end{equation}
+We achieve the combined solution of GTAP and GTM by passing outputs back and forth between the models until a dual-state equilibrium is achieved. Establishing a connection between the GTAP model and the GTM model requires that we  model the return on land using the GTAP model and feed those results into the GTM model as exogenous inputs. The GTM model then endogenously determines the amount of land available for crop and livestock production, and we feed that back into the GTAP model as an exogenous input. 
 
-where $V_1$ is a vector of all the variables in both systems, i.e., all variables in GTAP and all variables in GTM. Of import, $V_1$ includes the land change variables, which are exogenous to the GTAP model. $V_1$ is then used by the GTAP model (represented by function \mbox{GTAP}) and its outputs are passed to GTM as a vector of variables $V_2$. This output vector contains the change in rents, which is treated as exogenous in the GTM model. GTM then processes the $V_2$ variables as inputs and passes its solution back to GTAP as $V_1$. To solve the system simultaneously, we require that $V_1$ and $V_2$ be equal. With several iterations, the system converges to the change in land and land rent that is consistent across the models, i.e., the land change results in the land rent changes that, when entered into the GTM model, result in the same land changes as assumed by the GTAP model.
+
+On the software level, we establish the connection between the models using an R script, which is capable of handling other software, including generating required inputs, executing it and reading in any outputs. This is required to operate the GTAP model, which is written in GEMPACK, and the GTM model, which is written in GAMS. As GEMPACK and GAMS were developed long before software integration became important or even possible, we use much more modern technologies made available through the R software  [@R2021] to create the user functions that execut both models, collect their outputs, and automatically create any required input files.
+
+<!-- Once R was able to control the interactions between both models, we were then able to formulate the combined solution as a fairly simple math program that is solved in R: -->
+
+<!-- \begin{equation} -->
+<!-- \mbox{GTAP}:V_1\to V_2 -->
+<!-- \end{equation} -->
+
+<!-- \begin{equation} -->
+<!-- \mbox{GTM}:V_2\to V_1 -->
+<!-- \end{equation} -->
+
+<!-- \begin{equation} -->
+<!-- s.t. V_2 = V_1 -->
+<!-- \end{equation} -->
+
+<!-- where $V_1$ is a vector of all the variables in both systems, i.e., all variables in GTAP and all variables in GTM. Of import, $V_1$ includes the land change variables, which are exogenous to the GTAP model. $V_1$ is then used by the GTAP model (represented by function \mbox{GTAP}) and its outputs are passed to GTM as a vector of variables $V_2$. This output vector contains the change in rents, which is treated as exogenous in the GTM model. GTM then processes the $V_2$ variables as inputs and passes its solution back to GTAP as $V_1$. To solve the system simultaneously, we require that $V_1$ and $V_2$ be equal. With several iterations, the system converges to the change in land and land rent that is consistent across the models, i.e., the land change results in the land rent changes that, when entered into the GTM model, result in the same land changes as assumed by the GTAP model. -->
 
 
 # Changes under the baseline projections
@@ -345,17 +362,17 @@ We also show the utility of joining two major economic models. GTAP has long bee
 
 # Conclusions
 
+According to CEPII's projections, the growth of the global economy in the next ten years is expected to result in tremendous increases in global and regional GDP accompanied with a moderate growth in population. Another set of projections by GTM, however, suggests that this growth would also mean significant reductions in the world's forests that would be converted to agricultural land, resulting in a loss of over 100 million hectares of forest before 2033.
+
+By combining two well known global models---the GTAP model that describes the world markets and trade, and the GTAM model that describes the impact of economic and population growth along with land rents on the amounts of forested areas---we were able to estimate the size of the tax on agricultural land needed to prevent deforestation in the coming ten years through reducing the returns to land when used in agriculture. We find that even though the tax is substantial at about 70 percent, it results in only very small reductions in the projected growth in global GDP and welfare. We also observe that the reduction in available agricultural land relative to the baseline growth results in reduced agricultural output and higher prices, which may require additional policy action to avoid negative impacts in terms of food security.
+
+Finally, we note that a uniform global tax reducing the returns to land to the point of preventing global deforestation would produce highly differentiated impacts around the world's regions. Some regions, such as China, Russia, Canada and the United States would increase their forested areas as a result of the tax, while the regions with the greatest deforestation pressures, such as Sub-Saharan Africa, Brazil and Southeast Asia would only reduce the rate of their deforestation, for a zero change in the global forest area.
 
 
-# Acknowledgements
-
-The findings and conclusions in this publication are those of the author(s) and should not be construed to represent any official USDA or U.S. Government determination or policy. 
 
 
-# Funding statement
 
-This research was supported [in part] by the U.S. Department of Agriculture, Economic Research Service.
-
+\newpage
 
 # References
 
