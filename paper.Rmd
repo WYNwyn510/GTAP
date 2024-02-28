@@ -262,16 +262,6 @@ circlize::chordDiagram(changesInAgTrade, directional = TRUE, col = ifelse(change
 
 ```
 
-
-
-
-
-
-
-
-
-
-
 Overall, this tax policy, which results in zero net deforestation globally, has a rather significant negative economic impact on all regions except Japan and Canada who see an increase in consumer well-being of $977.1 million and $166.9 million, respectively (Table \@ref(tab:EV)). Consumer well-being is a measurement of equivalent variation and here measures the benefit/harm consumers experience in terms of income as a result of the policy changes. The United States, along with 10 other regions, see well-being drop by more than $1 billion. The most negatively impacted regions are South Asia (-$28.0 billion), China (-$14.5 billion), and Southeast Asia (-$13.6 billion). In total, this tax-driven policy is estimated to decrease global consumer well-being in 2033 by $92.1 billion relative to the scenario where no tax on forestland conversion was in place. 
 
 ```{r echo = FALSE}
@@ -295,10 +285,28 @@ kableExtra::column_spec(
 
 ```
 
+Much of this loss in well-being may be the result of higher prices. Japan is the only nation that sees any price impacts that are beneficial for consumers resulting from this policy, with the price of agricultural goods decreasing 0.3 percent (Table \@ref(tab:pm)). All other regions, for both agricultural and non-agricultural products, see prices rise between 0.3 and 5.1 percent. 
 
+```{r echo= FALSE}
+baselineGTAP = HARr::read_SL4('asset/GTAP/run_baseline.sl4')
+worldGTAP = HARr::read_SL4('asset/GTAP/run_scenario1.sl4')
 
-Much of this loss in well-being may be the result of higher prices. Japan is the only nation that sees any price impacts that are beneficial for consumers resulting from this policy, with the price of agricultural goods decreasing 0.3 percent (Table 6). All other regions, for both agricultural and non-agricultural products, see prices rise between 0.3 and 5.1 percent. 
+out = ((1+worldGTAP$pm/100)/(1+baselineGTAP$pm/100)-1)
 
+colnames(out) = regLabels[colnames(out)]
+out = cbind(out, Total = rowSums(out))
+
+out[4,'Total'] = (out[2 , 'Total']/out[1 , 'Total']-1)*100
+
+kableExtra::column_spec(
+  kableExtra::column_spec(kableExtra::kable_styling(
+    knitr::kable(out, caption = 'Percent change in market prices for agricultural goods in 2033, in dollars, with deforestation mitigation policy in place', digits = 1, escape = FALSE, label = 'pm')
+  ), 1, border_left = TRUE),
+  5,
+  border_right = TRUE
+)
+
+```
 
 
 
