@@ -175,10 +175,9 @@ kableExtra::column_spec(
 
 # Modeling the impact of possible measures to mitigate deforestation/promote afforestation 
 
-Against the backdrop of the baseline scenario, we turn to the question of the policy required that could prevent global deforestation in the period of 2023--2033. Because the area of forested area is mostly determined by the relative returns of land in agriculture and forestry, in our policy scenario we modify the return to land in agriculture by applying a uniform global tax the use of land in the production of agricultural output. 
+Against the backdrop of the baseline scenario, we turn to the question of what policy could prevent global deforestation in the period of 2023--2033. Because the area of forestland is mostly determined by the relative returns of land in agriculture and forestry, in our policy scenario we modify the return to land in agriculture by applying a uniform global tax on the use of land in the production of agricultural output. Solving the two models together shows that it would require a tax of roughly 70 percent to be assessed on the use of land for the deforestation rate to fall globally to zero. The economic impact of such a policy measure would not be limited to the cost of the tax, it would also impact food production and its prices. For example, with this policy in place, most regions of the world would see significant declines in the amount of agricultural land in 2033 relative to the baseline scenario where land conversion was not taxed. For the United States, there would be 2.1 percent less agricultural land (Table \@ref(tab:baseline-scenario1)). Larger decreases would happen in other major agricultural production regions such as China (-2.5 percent), South Asia (-7.9 percent), Brazil (-8.6 percent), and Russia (-9.3 percent). 
 
-Solving the two models together shows  that it would require a tax of roughly 70 percent to be assessed on the use of land for the deforestation rate to fall globally to zero. The economic impact of such a policy measure would not be limited to the cost of the tax, it would also impact food production and its prices. For example, with this policy in place, most regions of the world would see significant declines in the amount of agricultural land in 2033 relative to the baseline scenario where land conversion was not taxed. For the United States, there would be 2.1 percent less agricultural land (Table 2). Larger decreases would happen in other major agricultural production regions such as China (-2.5 percent), South Asia (-8.0 percent), Brazil (-8.5 percent), and Russia (-9.3 percent) (see Table \@ref(tab:baseline-scenario1)). 
-
+These reductions in the amount of agricultural land would then impact the quantity of agricultural goods that could be produced. For example, the 15.0 percent decrease in agricultural land in East Asia and the 9.0 percent decrease in agricultural land in Southeast Asia would result in large declines in percentage terms in agricultural production of 5.0 percent and 1.7 percent, respectively. Surprisingly, Brazil and the United States, despite their decreases in available agricultural land compared to the baseline 2033 scenario, are estimated to see increased agricultural output of 0.6 percent and 1.0 percent, respectively. This may be tied to the sharp declines in other regions prompting greater intensity of production to satisfy external demand. 
 
 ```{r echo = FALSE}
 
@@ -262,7 +261,7 @@ circlize::chordDiagram(changesInAgTrade, directional = TRUE, col = ifelse(change
 ```
 
 
-These reductions in the amount of agricultural land would then impact the quantity of agricultural goods that could be produced. For example, the 14.6 percent decrease in agricultural land in East Asia and the 9.0 percent decrease in agricultural land in Southeast Asia would result in large declines in percentage terms in agricultural production of 5.1 percent and 2.0 percent, respectively (Table 3). Surprisingly, Brazil and the United States, despite their decreases in available agricultural land compared to the baseline 2033 scenario, are estimated to see increased agricultural output of 0.2 percent and 0.6 percent, respectively. This may be tied to the sharp declines in other regions prompting greater intensity of production to satisfy external demand. 
+
 
 
 
