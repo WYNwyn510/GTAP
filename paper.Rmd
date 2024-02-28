@@ -9,7 +9,7 @@ toc: FALSE
 bibliography: references.bib
 header-includes:
     - \usepackage{setspace}\doublespacing
-abstract: "The projected growth in population and incomes as implied by various shared socioeconomic pathways is expected to create pressure to convert forestland into farmland. At the same time, the increasingly negative climate impacts are expected to generate further pressure to enhance the terrestrial carbon sink. These goals are potentially incompatible as reversing the deforestation trend by afforesting cropland might result in negative market impacts such as higher food prices, especially in low agricultural productivity/high population growth scenarios. In order to better grasp the interrelationship and the magnitude of harm that might be caused by prioritizing the goal of mitigating deforestation, this analysis connects two respected global economic models: the Global Trade Analysis Project (GTAP) model and the Global Timber Model (GTM). Results from the model suggest that it is possible through fiscal policy to preserve 144.2 million hectares of forestland that otherwise would be converted to agricultural land by 2033. As to the economic price for doing so, the avoided deforestation would in most regions of the world result in less agricultural output and higher market prices. This is estimated to impact the well-being of global consumers by $92.1 billion, which translates to a global average cost of $10.6 per person in 2033."
+abstract: "The projected growth in population and incomes is expected to create pressure to convert forestland into farmland. At the same time, the increasingly negative climate impacts are expected to generate further pressure to enhance the terrestrial carbon sink. Even though these goals are  incompatible as reversing the deforestation trend by afforesting cropland would result in negative market impacts such as higher food prices, using the GTAP and GTM models, we find that these impacts would be relatively small if the goal of  preserving 144.2 million hectares of forestland that otherwise would be converted to agricultural land by 2033 is achieved through a tax on using land in agricultural production. As to the economic price for doing so, the avoided deforestation would in most regions of the world result in less agricultural output and higher market prices. This is estimated to impact the well-being of global consumers by $92.1 billion, which translates to a global average cost of $10.6 per person in 2033."
 ---
 
 ```{r setup, include=FALSE, cache = TRUE, echo = FALSE}
@@ -59,18 +59,18 @@ To understand the impact of potential regional and global afforestation actions,
 
 ```{r echo = FALSE}
 regLabels = c(
-  "US" = 'US',
+  "US" = 'United States',
   "CHINA" = 'China',
   "BRAZIL" = 'Brazil',
   "CANADA" = 'Canada',
   "RUSSIA" = 'Russia',
-  "EU ANNEX I" = 'EU I',
+  "EU ANNEX I" = 'West/Central Europe',
   "EU NON ANNEX I" = 'EU II',
   "SOUTH ASIA" = 'South Asia',
   "CENT AMER." = 'Central America',
-  "RSAM" = 'Rest of Latin America',
+  "RSAM" = 'Other Latin America',
   "SSAF" = 'Sub-Saharan Africa',
-  "SE ASIA" = 'Southeast Asia',
+  "SE ASIA" = 'SE Asia',
   "OCEANIA" = 'Oceania',
   "JAPAN" = 'Japan',
   "AFME" = 'North Africa/Middle East',
@@ -105,6 +105,10 @@ names(gGTAP)=c("OCEANIA","CHINA","JAPAN","E ASIA", "SE ASIA", "SOUTH ASIA", "CAN
 
 gGTM = names(gGTAP)
 names(gGTM)= gGTAP
+
+
+gGTM['ROW']='ROW'
+regLabels['ROW']='ROW'
 
 baselineGTAP = HARr::read_SL4('asset/GTAP/run_baseline.sl4')
 
@@ -150,7 +154,7 @@ kableExtra::column_spec(
         knitr::kable(
           t(out),
           escape = FALSE,
-          format = 'latex',
+          #format = 'latex',
           digits = 1,
           label = 'baseline-forest-change',
           caption = 'Forestland by region in 2023 and estimated change by 2033'
@@ -233,7 +237,7 @@ kableExtra::column_spec(
         knitr::kable(
           t(out),
           escape = FALSE,
-          format = 'latex',
+          #format = 'latex',
           digits = 1,
           caption = 'Percentage change in the amount of forested land in 2033 with deforestation mitigation policy in place (Source: Authors\' calculations)'
         )
@@ -258,7 +262,19 @@ baselineGTAPC = HARr::read_har('asset/GTAP/run_baseline.slc', TRUE)
 
 changesInAgTrade = ((1+worldGTAP$qxs/100)/(1+baselineGTAP$qxs/100)-1)['ag',,,'TOTAL'] * baselineGTAPC$viws['ag',,]
 
-circlize::chordDiagram(changesInAgTrade, directional = TRUE, col = ifelse(changesInAgTrade>0,'green','red'),direction.type = "arrows", link.arr.type = 'big.arrow')
+colnames(changesInAgTrade) = rownames(changesInAgTrade) = regLabels[gGTM[c("ROW", "china", "japan", "ROW", "seasia", "ROW", "ROW", "usa", "ROW", "brazil", "samerica", "eui", "ROW", 
+"ROW", "ssa", "ROW", "ROW")]]
+
+
+
+changesInAgTrade = matsbyname::aggregate_byname(changesInAgTrade)
+
+diag(changesInAgTrade)=0
+
+
+#round(changesInAgTrade,0)
+
+circlize::chordDiagram(changesInAgTrade, directional = TRUE, col = ifelse(changesInAgTrade>0,'green','red'),direction.type = c("arrows"), link.arr.type = 'big.arrow')
 
 ```
 
@@ -269,17 +285,25 @@ Overall, this tax policy, which results in zero net deforestation globally, has 
 baselineGTAP = HARr::read_SL4('asset/GTAP/run_baseline.sl4')
 worldGTAP = HARr::read_SL4('asset/GTAP/run_scenario1.sl4')
 
-out = rbind(out, `$\\Delta$ ($)` = worldGTAP$EV-baselineGTAP$EV)
+
+out = cbind(
+  `Baseline (B\\$)` = baselineGTAP$ev[, 'TOTAL'] / 1000,
+  `Scenario (B\\$)` = worldGTAP$ev[, 'TOTAL'] / 1000,
+  `$\\Delta$ (B\\$)` = (worldGTAP$ev[, 'TOTAL'] - baselineGTAP$ev[, 'TOTAL']) /
+    1000
 )
+
 rownames(out) = regLabels[gGTM[rownames(out)]]
 
-rownames(out)[length(rownames(out))] = 'ROW'
+#rownames(out)[length(rownames(out))] = 'ROW'
+
+out = rbind(out, 'Total'=colSums(out))
 
 kableExtra::column_spec(
   kableExtra::column_spec(kableExtra::kable_styling(
-    knitr::kable(out, caption = 'Change in consumer well-being in 2033, by region, in dollars, with deforestation mitigation policy in place', digits = 1, escape = FALSE, label = 'EV')
+    knitr::kable(out, caption = 'Change in consumer well-being in 2033, by region, in billions dollars, with deforestation mitigation policy in place', digits = 1, escape = FALSE, label = 'EV',format.args = list(big.mark = ","))
   ), 1, border_left = TRUE),
-  5,
+  4,
   border_right = TRUE
 )
 
@@ -288,21 +312,23 @@ kableExtra::column_spec(
 Much of this loss in well-being may be the result of higher prices. Japan is the only nation that sees any price impacts that are beneficial for consumers resulting from this policy, with the price of agricultural goods decreasing 0.3 percent (Table \@ref(tab:pm)). All other regions, for both agricultural and non-agricultural products, see prices rise between 0.3 and 5.1 percent. 
 
 ```{r echo= FALSE}
+
+
+
 baselineGTAP = HARr::read_SL4('asset/GTAP/run_baseline.sl4')
 worldGTAP = HARr::read_SL4('asset/GTAP/run_scenario1.sl4')
 
-out = ((1+worldGTAP$pm/100)/(1+baselineGTAP$pm/100)-1)
+out = data.frame('Ag prices'=(1+worldGTAP$pm['ag',,'TOTAL']/100)/(1+baselineGTAP$pm['ag',,'TOTAL']/100)-1, check.names = FALSE) *100
 
-colnames(out) = regLabels[colnames(out)]
-out = cbind(out, Total = rowSums(out))
-
-out[4,'Total'] = (out[2 , 'Total']/out[1 , 'Total']-1)*100
+rownames(out) = regLabels[gGTM[rownames(out)]]
+#out = cbind(out, Total = rowSums(out))
+#out[4,'Total'] = (out[2 , 'Total']/out[1 , 'Total']-1)*100
 
 kableExtra::column_spec(
   kableExtra::column_spec(kableExtra::kable_styling(
-    knitr::kable(out, caption = 'Percent change in market prices for agricultural goods in 2033, in dollars, with deforestation mitigation policy in place', digits = 1, escape = FALSE, label = 'pm')
+    knitr::kable(out, caption = 'Percent change in market prices for agricultural goods in 2033, with deforestation mitigation policy in place, relative to baseline', digits = 1, escape = FALSE, label = 'pm')
   ), 1, border_left = TRUE),
-  5,
+  2,
   border_right = TRUE
 )
 
@@ -315,6 +341,10 @@ kableExtra::column_spec(
 This analysis shows that, at an estimated tax rate of 70.3 percent of the value of each hectare of land that is converted to agricultural land, global net deforestation would drop to roughly zero by 2033, preserving 144.2 million hectares of forestland that otherwise would have been converted to agricultural land. In the United States, as USDA-NASS (Land Values 2022 Summary (August 2022)) valued the average hectare of farmland in 2022 at $1,537.8, the tax would equate to $1,081.1/hectare. In Brazil, CEIC valued the average price of Brazilian land at roughly 2,500 Brazilian Reals, which would put the tax at roughly $82.2 per hectare. The economic price of this would likely be transfered to consumers through less agricultural output and higher market prices. Overall, such an action is estimated to reduce consumer well-being by $92.1 billion or $10.6 per every person in 2033. Governments might be wary of farmer discontent were they to take such fiscal actions and thus might be reluctant to impose such taxes on them. Thus, policymakers who wish to see deforestation stopped might have to resort to import tariffs on products produced on land converted from forestland for agricultural use. 
 
 We also show the utility of joining two major economic models. GTAP has long been valued for its ability to provide robust information on global trade flows and prices, and GTM has proven its utility in understanding the impact of forestry decisions on the carbon sink and land rents. By combining these models through the use of R and allowing the models to pass inputs and outputs back and forth iteratively, the benefits of both models have been maintained and their weaknesses greatly minimized. This advance holds great promise for advancement on a variety of fronts for researchers and policymakers interested in climate change, agricultural trade, and their inter-dependencies. 
+
+
+# Conclusions
+
 
 
 # Acknowledgements
