@@ -9,7 +9,7 @@ toc: FALSE
 bibliography: references.bib
 header-includes:
     - \usepackage{setspace}\doublespacing
-abstract: "The projected growth of the population and incomes as implied by various shared socioeconomic pathways is expected to create pressures on converting forests into farmland as food prices increase. Depending on the specific path taken, SSP1 through SSP5, and the continuation of the current trends in agricultural productivity growth, the market impacts are expected to vary but generally result in increases in food prices. Policies aimed at reversing the deforestation trend by afforesting cropland would result in severe negative market impacts such as  higher food prices, especially in low agricultural productivity/high population growth scenarios."
+abstract: "The projected growth in population and incomes as implied by various shared socioeconomic pathways is expected to create pressure to convert forestland into farmland. At the same time, the increasingly negative climate impacts are expected to generate increasing pressure to enhance the terrestrial carbon sink. These goals seem incompatible as reversing the deforestation trend by afforesting cropland might result in negative market impacts such as higher food prices, especially in low agricultural productivity/high population growth scenarios. In order to better grasp the interrelationship and the magnitude of harm that might be caused by prioritizing the goal of mitigating deforestation, this analysis connects two respected global economic models: the Global Trade Analysis Project (GTAP) model and the Global Timber Model (GTM). "
 ---
 
 ```{r setup, include=FALSE, cache = TRUE, echo = FALSE}
@@ -315,6 +315,15 @@ kableExtra::column_spec(
 This analysis shows that, at an estimated tax rate of 70.3 percent of the value of each acre of land that is converted to agricultural land, global net deforestation would drop to roughly zero. In the United States, as USDA-NASS (Land Values 2022 Summary (August 2022)) valued the average acre of farmland in 2022 at $3,800, the tax would be $2,671.4/acre. In Brazil, CEIC valued the average price of Brazilian land at roughly 2,500 Brazilian Reals, which would put the tax at roughly $203 per acre. Governments would very likely be wary of farmer discontent were they to apply, but they would also have to take into account the larger impacts on their economies. Restricting agricultural land, as shown above, would for the most part restrict output and increase prices. It is uncertain whether the gains from the increase in prices would be sufficient to offset the loss of potential revenue that would have come from expanded agricultural operations. As governments might be reluctant to impose such taxes on their own citizens, it is possible that policymakers who wished to see deforestation stopped could impose import tariffs equal to the tax rate to achieve the same result.
 
 We also show the utility of joining two major economic models. GTAP has long been valued for its ability to provide robust information on global trade flows and prices, and GTM has proven its utility in understanding the impact of forestry decisions on the carbon sink and land rents. By combining these models through the use of R and allowing the models to pass inputs and outputs back and forth iteratively, the benefits of both models have been maintained and their weaknesses greatly minimized. This advance holds great promise for advancement on a variety of fronts for researchers and policymakers interested in climate change, agricultural trade, and their inter-dependencies. 
+
+# Acknowledgements
+
+The findings and conclusions in this publication are those of the author(s) and should not be construed to represent any official USDA or U.S. Government determination or policy. 
+
+
+# Funding statement
+
+This research was supported [in part] by the U.S. Department of Agriculture, Economic Research Service.
 
 
 # References
