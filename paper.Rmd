@@ -223,7 +223,7 @@ rownames(out)[length(rownames(out))] = 'ROW'
 
 kableExtra::column_spec(
   kableExtra::column_spec(kableExtra::kable_styling(
-    knitr::kable(out, caption = 'Changes in key variables relative to baseline under a uniform land tax of 70 \\%', digits = 1, escape = FALSE, label = 'baseline-scenario1')
+    knitr::kable(out, caption = 'Changes in key variables in 2033 under a uniform land tax of 70 and relative to 2033 baseline scenario \\%', digits = 1, escape = FALSE, label = 'baseline-scenario1')
   ), 1, border_left = TRUE),
   5,
   border_right = TRUE
@@ -257,7 +257,7 @@ kableExtra::column_spec(
           escape = FALSE,
           #format = 'latex',
           digits = 1,
-          caption = 'Percentage change in the amount of forested land in 2033 with deforestation mitigation policy in place (Source: Authors\' calculations)'
+          caption = 'Percentage change in the amount of forested land in 2033 with deforestation mitigation policy in place relative to 2033 baseline scenario (Source: Authors\' calculations)'
         )
     ),
     1,
@@ -320,7 +320,7 @@ out = rbind(out, 'Total'=colSums(out))
 
 kableExtra::column_spec(
   kableExtra::column_spec(kableExtra::kable_styling(
-    knitr::kable(out, caption = 'Change in consumer well-being in 2033, by region, in billions dollars, with deforestation mitigation policy in place', digits = 1, escape = FALSE, label = 'EV',format.args = list(big.mark = ","))
+    knitr::kable(out, caption = 'Change in consumer well-being in 2033, by region, in billions of U.S. dollars, with deforestation mitigation policy in place relative to 2033 baseline scenario', digits = 1, escape = FALSE, label = 'EV',format.args = list(big.mark = ","))
   ), 1, border_left = TRUE),
   4,
   border_right = TRUE
@@ -345,7 +345,7 @@ rownames(out) = regLabels[gGTM[rownames(out)]]
 
 kableExtra::column_spec(
   kableExtra::column_spec(kableExtra::kable_styling(
-    knitr::kable(out, caption = 'Percent change in market prices for agricultural goods in 2033, with deforestation mitigation policy in place, relative to baseline', digits = 1, escape = FALSE, label = 'pm')
+    knitr::kable(out, caption = 'Percent change in market prices for agricultural goods in 2033, with deforestation mitigation policy in place, relative to 2033 baseline scenario', digits = 1, escape = FALSE, label = 'pm')
   ), 1, border_left = TRUE),
   2,
   border_right = TRUE
@@ -353,20 +353,18 @@ kableExtra::column_spec(
 
 ```
 
-
-
 # Discussion
 
-This analysis shows that, at an estimated tax rate of 70.3 percent of the value of each hectare of land that is converted to agricultural land, global net deforestation would drop to roughly zero by 2033, preserving 144.2 million hectares of forestland that otherwise would have been converted to agricultural land. In the United States, as USDA-NASS (Land Values 2022 Summary (August 2022)) valued the average hectare of farmland in 2022 at $1,537.8, the tax would equate to $1,081.1/hectare. In Brazil, CEIC valued the average price of Brazilian land at roughly 2,500 Brazilian Reals, which would put the tax at roughly $82.2 per hectare. The economic price of this would likely be transfered to consumers through less agricultural output and higher market prices. Overall, such an action is estimated to reduce consumer well-being by $92.1 billion or $10.6 per every person in 2033. Governments might be wary of farmer discontent were they to take such fiscal actions and thus might be reluctant to impose such taxes on them. Thus, policymakers who wish to see deforestation stopped might have to resort to import tariffs on products produced on land converted from forestland for agricultural use. 
+This analysis shows that, at an estimated tax rate of 70.3 percent of the value of each hectare of land that is converted to agricultural land, global net deforestation would drop to roughly zero by 2033, preserving 144.2 million hectares of forestland that otherwise would have been converted to agricultural land. In the United States, as USDA-NASS (Land Values 2022 Summary (August 2022)) valued the average hectare of farmland in 2022 at $1,537.8, the tax would equate to $1,081.1/hectare. In Brazil, CEIC valued the average price of Brazilian land at roughly 2,500 Brazilian Reals, which would put the tax at roughly $82.2 per hectare. The economic price of this would be transfered to consumers through lower agricultural output and higher market prices. Overall, this land tax would reduce consumer well-being by $92.1 billion or $10.60 per person in 2033. Governments might be wary of farmer discontent were they to take such fiscal actions and thus might be reluctant to impose such taxes on them. Thus, if policymakers wish to see deforestation stopped, they could instead use import tariffs on products produced on land converted from forestland for agricultural use. 
 
 We also show the utility of joining two major economic models. GTAP has long been valued for its ability to provide robust information on global trade flows and prices, and GTM has proven its utility in understanding the impact of forestry decisions on the carbon sink and land rents. By combining these models through the use of R and allowing the models to pass inputs and outputs back and forth iteratively, the benefits of both models have been maintained and their weaknesses greatly minimized. This advance holds great promise for advancement on a variety of fronts for researchers and policymakers interested in climate change, agricultural trade, and their inter-dependencies. 
 
 
 # Conclusions
 
-According to CEPII's projections, the growth of the global economy in the next ten years is expected to result in tremendous increases in global and regional GDP accompanied with a moderate growth in population. Another set of projections by GTM, however, suggests that this growth would also mean significant reductions in the world's forests that would be converted to agricultural land, resulting in a loss of over 100 million hectares of forest before 2033.
+According to CEPII's projections, the growth of the global economy in the next ten years is expected to result in tremendous increases in global and regional GDP accompanied by a moderate growth in population. Another set of projections by GTM suggests that this growth would also mean significant reductions in the world's forests because they would be converted to agricultural land. The model predicts a loss of over 144 million hectares of forest before 2033.
 
-By combining two well known global models---the GTAP model that describes the world markets and trade, and the GTAM model that describes the impact of economic and population growth along with land rents on the amounts of forested areas---we were able to estimate the size of the tax on agricultural land needed to prevent deforestation in the coming ten years through reducing the returns to land when used in agriculture. We find that even though the tax is substantial at about 70 percent, it results in only very small reductions in the projected growth in global GDP and welfare. We also observe that the reduction in available agricultural land relative to the baseline growth results in reduced agricultural output and higher prices, which may require additional policy action to avoid negative impacts in terms of food security.
+By combining two well-known global models---the GTAP model that describes the world markets and trade, and the GTAM model that describes the impact of economic and population growth along with land rents on the amounts of forested areas---we were able to estimate the size of the tax on agricultural land needed to prevent deforestation in the coming ten years through reducing the returns to land when used in agriculture. We find that even though the tax is substantial at about 70 percent, it results in only very small reductions in the projected growth in global GDP and welfare. We also observe that the reduction in available agricultural land relative to the baseline growth results in reduced agricultural output and higher prices, which may require additional policy action to avoid negative impacts in terms of food security.
 
 Finally, we note that a uniform global tax reducing the returns to land to the point of preventing global deforestation would produce highly differentiated impacts around the world's regions. Some regions, such as China, Russia, Canada and the United States would increase their forested areas as a result of the tax, while the regions with the greatest deforestation pressures, such as Sub-Saharan Africa, Brazil and Southeast Asia would only reduce the rate of their deforestation, for a zero change in the global forest area.
 
